@@ -1,0 +1,75 @@
+include ../../mixins/index
+
+-
+  const team = [
+    [{
+      url1: "#",
+      url2: "#",
+      url3: "#",
+      url4: "#",
+      url5: "#",
+      url6: "#",
+      url7: "mailto:a.simpson@unique.com",
+      url8: "tel:+1911772221111",
+      text1: "a.simpson@unique.com",
+      text2: "+1 911 (77) 222-1111",
+      name: "alexis simpson",
+      position: "CEO & Developer"
+    }],
+    [{
+      url1: "#",
+      url2: "#",
+      url3: "#",
+      url4: "#",
+      url5: "#",
+      url6: "#",
+      url7: "mailto:s.cole@unique.com",
+      url8: "tel:+1911772222222",
+      text1: "s.cole@unique.com",
+      text2: "+1 911 (77) 222-2222",
+      name: "steven cole",
+      position: "User Interface Designer"
+    }],
+    [{
+      url1: "#",
+      url2: "#",
+      url3: "#",
+      url4: "#",
+      url5: "#",
+      url6: "#",
+      url7: "mailto:a.lennon@unique.com",
+      url8: "tel:+1911772223333",
+      text1: "a.lennon@unique.com",
+      text2: "+1 911 (77) 222-3333",
+      name: "Frank piener",
+      position: "Sales Manager"
+    }],
+    [{
+      url1: "#",
+      url2: "#",
+      url3: "#",
+      url4: "#",
+      url5: "#",
+      url6: "#",
+      url7: "mailto:a.lennon@unique.com",
+      url8: "tel:+1911772224444",
+      text1: "a.lennon@unique.com",
+      text2: "+1 911 (77) 222-4444",
+      name: "ashley lennon",
+      position: "IT Specialist"
+    }],
+  ]
+
++b.section.--eighth.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +sectionTitleWhite(
+      'team',
+      'members',
+      'We’re some creative people with powerful knowledge & awesome skills behind the scene bringing you the bests'
+    )
+    +b.slider-wrapper
+      +b.cards-wrapper.slick-team
+        each element in team
+          +team(element)
+        each element in team
+          +team(element)

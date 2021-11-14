@@ -1,0 +1,240 @@
+.section
+  &--
+    &header
+      bg: var(--theme-accent-white)
+      pos: relative
+      z-index: 99
+      +mq-lg
+        bg: none
+      .g-container
+        pa: 0
+
+.header-wrapper
+  pos: relative
+  t: 0
+  w: 100%
+  h: 72px
+  d: flex
+  ai: center
+  jc: space-between
+  pl: 10px
+  pr: 10px
+  +mq-lg 
+    jc: flex-start
+    h: 106px
+
+.logo-image
+  filter: brightness(0)
+  +mq-lg
+    filter: brightness(1)
+    mr: 62px
+
+.menu-burger
+  h: 18px
+  w: 18px
+  pos: relative
+  an: ffff 1s
+  +mq-lg
+    d: none
+  &__
+    &item
+      pos: absolute
+      w: 100%
+      h: 3px
+      l: 0
+      bg: var(--theme-accent-black)
+      &--
+        &top
+          t: 0
+          tr: all 1s ease 0s
+      &--
+        &center
+          t: 50%
+          trans: translate(0, -50%)
+          tr: all 1s ease 0s
+      &--
+        &bottom
+          b: 0
+          tr: all 1s ease 0s
+  &--
+    &is-
+      &active
+        an: fff 1s
+        .menu-burger
+          &__
+            &item
+              &--
+                &top
+                  t: 50%
+                  trans: translate(0px, -50%) rotate(-45deg)
+              &--
+                &center
+                  opacity: 0
+              &--
+                &bottom
+                  b: 50%
+                  trans: translate(0px, 50%) rotate(45deg)
+
+
+.header-menu
+  d: flex
+  ai: center
+  f-dir: column
+  bg: var(--theme-accent-black)
+  h: 0px
+  w: 0px
+  pos: absolute
+  l: -1000px
+  t: 72px
+  opacity: 0
+  an: menu 3s
+  z-index: 1
+  +mq-md
+    an: menu 2s
+  +mq-lg
+    an: none
+    pos: relative
+    t: 0
+    l: 0
+    w: inherit
+    h: max-content
+    opacity: 1
+    bg: none
+    f-dir: row
+  &--
+    &is-
+      &active
+        h: 100vh
+        w: 100%
+        opacity: 1
+        l: 0
+        an: menu-is-active 1s
+        +mq-md
+          an: menu-is-active 1.5s
+        
+  &__
+    &item
+      ta: center
+      ma: 15px 0px
+      +mq-lg
+        d: none
+        ma: 0
+      &--
+        &lang
+          d: flex
+          ai: center
+          order: -1
+          +mq-lg
+            d: flex
+
+.text
+  &--
+    &lang
+      ma: 0px 3px
+      color: var(--theme-accent-greyTuesday)
+  &--
+    &de
+      color: var(--theme-accent-white)
+
+.menu-link
+  color: var(--theme-accent-greyTuesday)
+  fs: $type-font-size-2xs
+  fw: 500
+  ta: center
+
+.menu
+  &__
+    &item
+      ta: center
+      &--
+        &lang
+          d: flex
+          ai: center
+          order: 1
+
+.search
+  w: 18px
+  h: 18px
+  +mq-lg
+    cursor: pointer
+    mr: 25px
+  .image
+    w: 100%
+    h: 100%
+    filter: brightness(0)
+    +mq-lg
+      filter: brightness(1)
+      of: contain
+  
+.social-wrapper
+  d: none
+  +mq-lg
+    d: flex
+    mr: 0
+  &__
+    &link
+      ml: 6px
+      mr: 6px
+
+.line
+  d: none
+  +mq-lg
+    d: block
+    pos: absolute
+    w: 100%
+    h: 1px
+    bg: var(--theme-accent-whiteFirst)
+    opacity: 0.1
+    b: 0
+
+.header
+  &--
+    &white
+      .section
+        bg: var(--theme-accent-white)
+      .logo-image,
+      .image
+        filter: brightness(0) !important
+      .text
+        &--
+          &de
+            color: var(--theme-accent-dark)
+    
+.header-
+  &search
+    d: flex
+    h: 30px
+    w: 0
+    br: 1px solid var(--theme-accent-black)
+    br-radius: 15px
+    z-index: 5
+    pos: absolute
+    r: 5px
+    top: 50%
+    trans: translate(0, -50%)
+    overflow: hidden
+    opacity: 0
+    tr: all 1s ease 0s
+    +mq-lg
+      r: 80px
+    &--
+      &active
+        tr: all 1s ease 0s
+        w: 300px
+        opacity: 1
+        +mq-lg
+          w: 400px
+    .field
+      bg: var(--theme-accent-whiteFirst)
+      h: 100%
+      w: 100%
+      br-radius: 15px 0 0 15px
+    .image
+      filter: none !important
+    .btn
+      d: flex
+      jc: center
+      ai: center
+      w: 50px
+      br-radius: 0 15px 15px 0
+      bg: var(--theme-accent-greyMonday)

@@ -1,0 +1,60 @@
+.section
+  &--
+    &main-
+      &oops
+        pos: relative
+        h: 414px
+        +mq-lg
+          h: 828px
+        .image
+          pos: absolute
+          w: 100%
+          h: 100%
+        .g-
+          &container
+            d: flex
+            pos: relative
+            h: 100%
+            ai: center
+            +mq-lg
+              jc: flex-end
+.oops-
+  &wrapper
+    .text
+      color: var(--theme-accent-white)
+      @extend .ds-caption--light
+      mb: 30px
+      &--
+        &title
+          fs: $type-font-size-xl
+          +mq-md
+            fs: $type-font-size-2xl
+        &subtitle
+          fs: $type-font-size-sm
+          +mq-md
+            fs: $type-font-size-lg
+  
+.search-
+  &form
+    d: flex
+    w: 100%
+    h: 57px
+    .field
+      h: 100%
+      w: 100%
+      pl: 20px
+    .btn
+      d: flex
+      jc: center
+      ai: center
+      pa: 15px
+      h: 100%
+      bg: var(--theme-accent-greyThursday)
+      +mq-md
+        pa: 0
+        w: 200px
+      .text
+        color: var(--theme-accent-white)
+        fs: $type-font-size-sm
+        @extend .ds-caption--regular
+        mb: 0

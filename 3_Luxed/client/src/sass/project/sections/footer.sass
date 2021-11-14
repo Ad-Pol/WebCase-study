@@ -1,0 +1,157 @@
+.section
+  &--
+    &footer
+      bg: var(--theme-accent-dark)
+      pa: 35px 0
+
+.footer-wrapper
+  d: flex
+  f-dir: column
+  ai: center
+  +mq-xl
+    ai: flex-start
+
+.block
+  d: flex
+  ai: center
+  f-dir: column
+  +mq-lg
+    f-dir: row
+  &--
+    &first
+      +mq-xl
+        w: 100%
+        jc: space-between
+        mb: 70px
+  &__
+    &item
+      d: flex
+      f-dir: column
+      ai: center
+      .image
+        opacity: 0.3
+
+.image-logo
+  w: 130px
+  h: 40px
+  mb: 15px
+
+.text
+  &--
+    &caption
+      color: var(--theme-accent-white)
+      fs: $type-font-size-sm
+      @extend .ds-caption--medium
+      ft: uppercase
+      mb: 20px
+      +mq-xl
+        mb: 0
+        mr: 20px
+
+      
+.network-wrapper
+  d: flex
+  f-dir: column
+  ai: center
+  +mq-xl
+    f-dir: row
+    
+
+.links-wrapper
+  d: flex
+  f-dir: row
+
+.link
+  &--
+    &social
+      d: flex
+      mr: 10px
+      ml: 10px
+      .text
+        color: var(--theme-accent-white)
+        fs: $type-font-size-2xs
+        @extend .ds-caption--medium
+        ft: none
+        mb: 0
+
+.image
+  &--
+    &ico
+      w: 18px
+      h: 18px
+      mr: 10px
+      mb: 0
+
+.contacts
+  d: flex
+  f-dir: column
+  ai: center
+  +mq-md
+    f-dir: row
+
+.contact-wrapper
+  d: flex
+  f-dir: column
+  ai: center
+  mt: 25px
+  +mq-lg
+    mt: 0
+  +mq-xl
+    f-dir: row
+  .link
+    mb: 10px
+    +mq-lg
+      mb: 0
+
+.lang-wrapper
+  d: flex
+  +mq-xl
+    margin: 0 30px
+
+.footer-menu
+  d: flex
+  f-dir: column
+  ai: center
+  mt: 25px
+  +mq-md
+    f-dir: row
+  +mq-lg
+    mt: 0
+    ml: 100px
+  &__
+    &link
+      ma: 10px 0
+      color: var(--theme-accent-greyTuesday)
+      fs: $type-font-size-2xs
+      @extend .ds-caption--medium
+      +mq-md
+        mr: 35px
+      &:nth-last-child(1)
+        mr: 0
+
+.section
+  &--
+    &bottom
+      bg: var(--theme-accent-dark)
+      pa: 20px 0
+      +mq-xl
+        bg: var(--theme-accent-whiteFirst)
+        
+.bottom-wrapper
+  d: flex
+  jc: center
+  +mq-xl
+    jc: space-between
+  .text,
+  .footer-link
+    color: var(--theme-accent-whiteFirst)
+    fs: $type-font-size-2xs
+    @extend .ds-caption--medium
+    +mq-xl
+      color: var(--theme-accent-dark)
+      ml: 40px
+
+.info-wrapper
+  d: none
+  +mq-xl
+    d: flex

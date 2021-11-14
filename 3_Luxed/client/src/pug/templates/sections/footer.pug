@@ -1,0 +1,102 @@
+include ../../mixins/index
+footer.footer
+
+  +b.section.--footer.SECTION
+    +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+      +b.footer-wrapper
+        +b.block.--first
+          +b.link.--logo.A(
+            href= "../pages/index.html"
+          )
+            +b.image-logo.IMG(
+              src= ('../../static/img/logo.png'),
+              alt= "luXed"
+            )
+          
+          +e.item
+            +b.network-wrapper
+              +b.text.--caption.P GET IN TOUCH WITH US 
+              +b.links-wrapper
+                +b.link.--social.A(
+                  href= "https://www.facebook.com/",
+                  target= "_blank"
+                )
+                  +b.image.--ico.IMG(
+                    src= ('../../static/img/icon/fb.svg')
+                  )
+                  +b.text.P facebook
+                +b.link.--social.A(
+                  href= "https://www.linkedin.com/",
+                  target= "_blank"
+                )
+                  +b.image.--ico.IMG(
+                    src= ('../../static/img/icon/link.svg')
+                  )
+                  +b.text.P linkedin
+         
+          +e.item
+            +b.contact-wrapper
+              +b.text.--caption.P OUR CONTACS:
+              +b.contacts
+                +b.link.--social.A(
+                    href= "mailto:test@testmail.info",
+                  )
+                    +b.image.--ico.IMG(
+                      src= ('../../static/img/icon/mail.svg')
+                    )
+                    +b.text.P test@testmail.info
+                +b.link.--social.A(
+                    href= "tel:88003338182",
+                  )
+                    +b.image.--ico.IMG(
+                      src= ('../../static/img/icon/phone.svg')
+                    )
+                    +b.text.P 8-800-333-81-82
+        
+        
+        +b.block.--second
+          +b.lang-wrapper
+            +b.menu-link.A(
+              href= "#"
+            )
+              +b.text.--lang.--de.P DE 
+
+            +b.text.--lang.P |
+            
+            +b.menu-link.A(
+              href= "#"
+            )
+              +b.text.--lang.--fr  FR
+         
+          +b.footer-menu 
+            +e.link.A(
+              href= "../pages/produkte.html"
+            ) Produkte
+            +e.link.A(
+              href= "../pages/uberunts.html"
+            ) Über Uns 
+            +e.link.A(
+              href= "../pages/allenews.html"
+            ) News
+            +e.link.A(
+              href= "../pages/agenten.html"
+            ) Agenten
+            +e.link.A(
+              href= "../pages/fachpartner.html"
+            ) Fachpartner 
+ 
+ 
+  +b.section.--bottom.SECTION
+    +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+      +b.bottom-wrapper
+        +b.info-wrapper
+          +b.text.P Copyright &copy; 2018 SITENAME
+          +b.footer-link.A(
+            href= "#"
+          ) General terms and conditions
+          +b.footer-link.A(
+            href= "#"
+          ) Legal information
+        +b.footer-link.--visable.A(
+            href= "#"
+          ) Angepasst / Entworfen von WEBish

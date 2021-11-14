@@ -1,0 +1,194 @@
+h1, h2, h3, a, p
+  font-family: Raleway
+
+a
+  text-decoration: none
+
+body
+  background: var(--theme-accent-bg)
+
+.flag
+  w: 40px
+  h: 70px
+  position: relative
+  margin-right: 20px
+  flex-shrink: 0
+
+  &__item
+    &--top
+      w: 100%
+      h: 50px
+      background: var(--theme-accent-dark-grey_s)
+      position: absolute
+      border-radius: 3px
+      clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0)
+      top: 0
+      z-index: 2
+      
+      .text
+        color: var(--theme-accent-white_t)
+        font-family: Elegant
+        font-size: $type-font-size-lg
+        font-weight: 400
+        line-height: 1
+        padding: 0 9px
+        padding-top: 17px
+    
+    &--bottom
+      w: 100%
+      h: 50px
+      position: absolute
+      bottom: 0
+      background: var(--theme-accent-aqumarin)
+      border-radius: 3px
+      clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0)
+      z-index: 1
+
+.section
+  .marker
+    w: 38px
+    h: 38px
+    background: var(--theme-accent-aqumarin)
+    d: flex
+    align-items: center
+    justify-content: center
+    border-radius: 3px
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%, -50%) rotate(-45deg)
+      
+    &__text
+      color: var(--theme-accent-white_f)
+      font-family: Elegant
+      font-size: 20px
+      transform: rotate(45deg)
+
+    &--dark
+      background: var(--theme-accent-dark)
+
+.section-title
+  w: 100%
+  d: flex
+  flex-direction: column
+  justify-content: center
+  
+  .title-wrapper
+    d: flex
+    align-items: center
+    justify-content: center
+    &__
+      &image
+        margin-right: 20px
+        margin-left: 20px
+        &--
+          &right
+            transform: rotate(180deg)
+    
+    .lines
+      position: relative
+      h: 6px
+      w: 100%
+      &__
+        &item
+          position: absolute
+          w: 100%
+          h: 1px
+          background-image: linear-gradient(to left, var(--theme-accent-grey_s) 0%, var(--theme-accent-white_fo) 100%)
+          &--
+            &top
+              top: 0
+          &--
+            &bottom
+              bottom: 0
+    
+    .lines   
+      &--
+        &right
+          transform: rotate(180deg)
+    
+    .text
+      margin-top: 0
+      margin-bottom: 0
+      font-size: $type-font-size-2sm
+      font-weight: 800
+      text-transform: uppercase
+      white-space: nowrap
+      +mq-md
+        font-size: $type-font-size-2xl     
+      &--
+        &decorate
+          color: var(--theme-accent-aqumarin) !important
+          margin-left: 5px
+
+  .text
+    text-align: center
+    margin-top: 20px
+    color: var(--theme-accent-light_gray)
+    font-size: $type-font-size-sm
+    font-weight: 500
+    line-height: 16px
+    margin-bottom: 50px
+.section-title  
+  &--
+    &white
+      .title-wrapper
+        .text
+          color: var(--theme-accent-dark)
+  &--
+    &dark
+      .title-wrapper
+        .text
+          color: var(--theme-accent-white_f)
+
+
+.blocks-wrapper
+  .block
+    d: flex
+    flex-direction: column
+    align-items: center
+    w: 270px
+    margin: 0 auto
+    &__
+      &item
+        d: flex
+        &--
+          &first
+            justify-content: center
+            align-items: center
+            margin-bottom: 21px
+            .text
+              color: var(--theme-accent-white_f)
+              font-size: $type-font-size-7xl
+              font-weight: 500
+              font-style: italic
+              text-transform: uppercase
+              margin-left: 15px
+              margin-right: 15px
+              &--pic
+                font-family: Elegant
+                font-size: $type-font-size-2xl
+                color: var(--theme-accent-dark-grey_f)
+                transform: rotate(45deg)
+                margin: 0
+          
+          &second
+            justify-content: space-between
+            align-items: center
+            w: 100%
+            margin-bottom: 17px
+            .line
+              w: 120px
+              h: 1px
+              background: var(--theme-accent-dark-grey_f)
+            .text
+              color: var(--theme-accent-aqumarin)
+              font-family: Elegant
+              font-size: $type-font-size-lg
+    .text
+      &--
+        &what
+          color: var(--theme-accent-grey_f)
+          font-size: 14px
+          font-weight: 800
+          text-transform: uppercase

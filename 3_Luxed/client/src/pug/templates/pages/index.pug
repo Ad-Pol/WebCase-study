@@ -1,0 +1,15 @@
+extends ../base
+
+block header 
+  -
+    const headerMain = true
+
+  include ../sections/header
+
+block content
+  main.main
+    include ../../mixins/index
+    include ../sections/index_page/slider
+    include ../sections/index_page/coubes
+    include ../sections/index_page/join
+    include ../sections/other/text

@@ -1,0 +1,18 @@
+include ../../../mixins/index
+
++b.section.--main-results.SECTION
+  +mainbg
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +breadcrumb('Search', 'Search')
+    +b.form.search-form.FORM(
+      action= '../pages/oops.html',
+      novalidate
+      )
+      +b.field.INPUT(
+        type= 'search',
+        placeholder= 'Search for'
+      )
+      +b.btn.all-buttons.BUTTON(
+        type= 'submit'
+      ) 
+        +b.text.P SEARCH

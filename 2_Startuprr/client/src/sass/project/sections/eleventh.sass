@@ -1,0 +1,145 @@
+.section
+  &--
+    &eleventh
+      background: var(--theme-accent-white_fo)
+      padding-top: 80px
+      padding-bottom: 30px
+      margin: 0 auto
+      .cards-wrapper
+        d: flex
+        flex-direction: column
+        align-items: center
+        +mq-sm
+          flex-flow: row wrap
+          justify-content: space-around
+        .card
+          d: flex
+          flex-direction: column
+          align-items: center
+          w: 270px
+          h: 440px
+          border: 1px solid var(--theme-accent-white)
+          border-radius: 5px
+          position: relative
+          padding-top: 50px
+          margin-bottom: 80px
+          &__
+            &link
+              w: 118px
+              h: 39px
+              d: flex
+              justify-content: center
+              align-items: center
+              background: var(--theme-accent-aqumarin)
+              border-radius: 3px
+              color: var(--theme-accent-white)
+              font-size: $type-font-size-2xs
+              font-weight: 800
+              text-transform: uppercase
+              order: 1
+          &__
+            &item
+              &--
+                &title
+                  w: max-content
+                  d: flex
+                  justify-content: center
+                  align-items: center
+                  background: var(--theme-accent-dark)
+                  border-radius: 3px
+                  color: var(--theme-accent-white)
+                  padding: 15px
+                  position: absolute
+                  top: 0
+                  left: 50%
+                  transform: translate(-50%, -50%)
+                  .text
+                    &--
+                      &title
+                        font-size: $type-font-size-2xs
+                        font-weight: 800
+                        text-transform: uppercase
+                        margin-right: 10px
+                        margin-left: 10px
+                    &--
+                      &pic
+                        color: var(--theme-accent-aqumarin)
+                        font-family: Elegant
+                        font-size: $type-font-size-sm
+                        d: none
+              &--
+                &advance
+                  .text
+                    &--
+                      &pic
+                        d: block
+                    
+
+          .block
+            d: flex
+            align-items: flex-end
+            &__
+              &item
+                &--
+                  &value
+                    .text
+                      color: var(--theme-accent-light_grey)
+                      font-size: $type-font-size-sm
+                      font-weight: 500
+                      margin-bottom: 8px
+                      margin-right: 8px
+                &--
+                  &price
+                    d: flex
+                    align-items: flex-end
+                    position: relative
+                    .text
+                      color: var(--theme-accent-dark)
+                      &--
+                        &dollars
+                          font-size: $type-font-size-6xl
+                          font-weight: 800
+                          text-transform: uppercase
+                          line-height: 1
+                      &--
+                        &cents
+                          font-size: $type-font-size-sm
+                          font-weight: 800
+                          position: absolute
+                          top: 0
+                          right: 0
+                      &--
+                        &dot
+                          font-family: Elegant
+                          font-size: $type-font-size-lg
+                          transform: rotate(45deg)
+            .text
+              &--
+                &mounts
+                  color: var(--theme-accent-light_grey)
+                  font-size: $type-font-size-3xs
+                  font-weight: 500
+                  margin-left: 10px
+                  margin-bottom: 8px
+          &__
+            &line
+              w: 228px
+              h: 1px
+              background: var(--theme-accent-white)
+              margin-top: 25px
+              margin-bottom: 25px
+          &__
+            &item
+              &--
+                &offer
+                  d: flex
+                  flex-direction: column
+                  align-items: center
+                  .text
+                    color: var(--theme-accent-light_grey)
+                    font-size: $type-font-size-xs
+                    font-weight: 500
+                    margin-bottom: 10px
+                    &--
+                      &last
+                        margin-bottom: 0

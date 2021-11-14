@@ -1,0 +1,108 @@
+.section
+  &--
+    &join
+      pos: relative
+      pt: 100px
+      pb: 55px
+      +mq-lg
+        pt: 50px
+
+.bg-
+  &image
+    pos: absolute
+    t: 0
+    l: 50%
+    trans: translate(-50%, 0)
+    overflow: hidden
+    w: 100%
+    h: 333px
+
+.form-
+  &border
+    pos: relative
+    d: flex
+    ai: center
+    jc: center
+    br: 1px solid var(--theme-accent-greyThursday)
+    pa: 10px 0
+    +mq-sm
+      pa: 15px
+    +mq-lg
+      h: 229px
+    +mq-xl
+      w: 1089px
+      pa: 0
+      jc: flex-start
+
+.form-
+  &wrapper
+    d: flex
+    ai: center
+    f-dir: column
+    +mq-xl
+      f-dir: row
+      pos: absolute
+      l: 51px
+
+.subtitle
+  &--
+    &join
+      color: var(--theme-accent-white)
+      fs: $type-font-size-xl !important
+      @extend .ds-caption--medium
+      ft: uppercase
+      mb: 25px
+      +mq-xl
+        w: max-content
+        mb: 0px
+        mr: 84px
+        
+.form
+  &--
+    &join
+      d: flex
+      ai: center
+      pos: relative
+
+.field
+  &--
+    &join
+      bg: var(--theme-accent-white)
+      h: 57px
+      pl: 10px
+      pr: 10px
+      w: 200px
+      color: var(--theme-accent-greySunday)
+      @extend .ds-caption--medium
+      fs: $type-font-size-lg
+      +mq-sm
+        w: 400px
+      +mq-lg
+        w: 523px
+.btn
+  &--
+    &join
+      d: flex
+      ai: center
+      bg: var(--theme-accent-greyThursday)
+      w: max-content
+      h: 57px
+      +mq-sm
+        pa: 0px 15px
+      +mq-lg
+        pa: 0px 30px 
+      .text
+        color: var(--theme-accent-white)
+        fs: $type-font-size-sm
+        @extend .ds-caption--regular
+        ft: uppercase
+        ma: 0
+        mr: 5px
+        +mq-sm
+          mr: 20px
+        +mq-lg
+          mr: 92px
+      .image
+        w: 15px
+        h: 11px
+        ma: 0

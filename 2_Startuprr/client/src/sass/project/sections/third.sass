@@ -1,0 +1,76 @@
+.section
+  &--
+    &third
+      background: var(--theme-accent-white_fo)
+      padding-top: 80px
+      position: relative
+      padding-bottom: 87px
+
+      .card-wrapper
+        w: 100%
+        .card
+          d: flex
+          align-items: flex-start
+          
+          &__
+            &item
+              &--
+                &flag
+                  cursor: default
+                  w: 40px
+                  h: 70px
+                  position: relative
+                  margin-right: 20px
+                  flex-shrink: 0
+
+                  .flag
+                    &--
+                      &top
+                        w: 100%
+                        h: 50px
+                        background: var(--theme-accent-dark-grey_s)
+                        position: absolute
+                        border-radius: 3px
+                        clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0)
+                        top: 0
+                        z-index: 2
+                        .text
+                          cursor: default
+                          color: var(--theme-accent-white_t)
+                          font-family: Elegant
+                          font-size: $type-font-size-lg
+                          font-weight: 400
+                          line-height: 1
+                          padding: 0 9px
+                          padding-top: 17px
+
+              &--
+                &bottom
+                  w: 100%
+                  h: 50px
+                  position: absolute
+                  bottom: 0
+                  background: var(--theme-accent-aqumarin)
+                  border-radius: 3px
+                  clip-path: polygon(100% 0, 100% 65%, 50% 100%, 0 65%, 0 0)
+                  z-index: 1
+              &--
+                &description
+                  d: flex
+                  flex-direction: column
+                  justify-content: flex-start
+                  .caption 
+                    color: var(--theme-accent-grey_f)
+                    font-size: $type-font-size-xs
+                    font-weight: 400
+                    text-transform: uppercase
+                    margin-bottom: 10px
+                  .text
+                    color: var(--theme-accent-light_grey)
+                    font-size: $type-font-size-xs
+                    font-weight: 500
+                    margin-bottom: 20px
+                    &--
+                      &info
+                        color: var(--theme-accent-grey_s)
+                        font-size: $type-font-size-3xs

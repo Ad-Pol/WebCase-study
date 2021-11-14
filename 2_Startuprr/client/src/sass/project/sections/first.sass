@@ -1,0 +1,71 @@
+.section
+  &--
+    &first
+      background: var(--theme-accent-white_fo)
+      padding-top: 80px
+      padding-bottom: 57px
+
+      .cards-wrapper
+        w: 100%
+        display: flex
+        align-items: center
+        flex-direction: column
+        +mq-xl
+          flex-direction: row
+          justify-content: space-between
+
+        .card
+          d: flex
+          align-items: center
+          flex-direction: column
+          margin-bottom: 50px
+
+          &__
+            &pic
+              w: 100px
+              h: 100px
+              border-radius: 50%
+              background: var(--theme-accent-dark)
+              d: flex
+              align-items: center
+              justify-content: center
+
+              .text
+                &--
+                  &pic
+                    font-family: Elegant
+                    color: var(--theme-accent-white_f)
+                    font-size: 36px
+                    line-height: 1
+                &--
+                  &moron
+                    margin-left: -6px
+          
+          .caption
+            color: var(--theme-accent-grey_f)
+            font-size: $type-font-size-xs
+            font-weight: 800
+            text-transform: uppercase
+            margin-top: 30px
+
+          .text
+            &--
+              &description
+                margin-top: 30px
+                color: var(--theme-accent-grey_s)
+                font-size: $type-font-size-xs
+                font-weight: 500
+                line-height: 24px
+                text-align: center
+                margin-bottom: 20px
+            
+          &__
+            &link
+              padding: 11px
+              border: 1px solid var(--theme-accent-grey_s)
+              border-radius: 3px
+              color: var(--theme-accent-light_gray)
+              font-size: 10px
+              font-weight: 800
+              text-transform: uppercase
+              order: 1

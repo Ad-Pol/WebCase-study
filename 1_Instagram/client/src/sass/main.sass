@@ -1,0 +1,252 @@
+.main
+  margin-top: 30px
+
+.section
+  w: 100%
+
+.about
+  d: flex
+  flex-direction: column
+  
+.about-wrapper
+  d: flex
+  margin: 0 auto
+  w: 100%
+  justify-content: space-around
+
+  +mq-md
+    justify-content: flex-start
+
+  &__image
+    w: 80px
+    h: 80px
+    d: block
+    object-fit: cover
+    object-position: center
+    border-radius: 50%
+
+    +mq-sm
+      w: 152px
+      h: 152px
+    
+    +mq-md
+      margin-left: 70px
+      margin-right: 100px
+
+.about-block
+  d: flex
+
+.about-block--first
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+
+  +mq-md
+    justify-content: flex-start
+  
+  .about-block
+    &__link
+      w: 33px
+      h: 28px
+      background: var(--theme-accent-blue)
+      border-radius: 3px
+      d: flex
+      justify-content: center
+      align-items: center
+      color: var(--theme-accent-white)
+      font-weight: 700
+      font-size: 14px
+      line-height: 1.2
+      margin-right: 5px
+
+      +mq-sm
+        margin-right: 10px
+
+  .about-block
+    &__link
+      &--follow
+        w: max-content
+        padding: 0 25px
+      
+        +mq-sm
+          margin-right: 15px
+  
+  .about-block
+    &__link
+      &--other
+        background: none
+        color: var(--theme-accent-black)
+        margin-right: 0
+
+
+.title
+  font-weight: 500
+  font-size: 18px
+  line-height: 1.2
+  margin: 0 3px
+
+  +mq-sm
+    font-size: 26px
+    margin-right: 26px
+
+
+.triangle
+  width: 0
+  height: 0
+  border-left: 4px solid transparent
+  border-right: 4px solid transparent
+  border-top: 7px solid var(--theme-accent-white)
+
+.about-block
+  &--second
+    justify-content: space-around
+    margin-top: 10px
+
+    +mq-sm
+      margin-top: 20px
+
+  &__link
+    w: max-content
+    h: max-content
+    background: none
+    border-radius: none
+    margin-right: 5px
+
+    +mq-md
+      d: flex
+      flex-direction: row
+      margin-right: 39px
+      
+    .text
+      color: var(--theme-accent-black)
+      font-weight: 400
+      font-size: 17px
+      line-height: 1.25
+
+      +mq-md
+        margin-right: 5px
+
+      &--number
+        font-weight: 500
+        
+        +mq-md
+          margin-right: 0
+
+.section
+  &--informaition
+    margin-top: 15px
+
+    +mq-sm
+      margin-top: 20px
+
+    +mq-md
+      flex-direction: flex-start
+      w: 427px
+      margin-left: 322px
+      margin-top: -50px
+    
+    +mq-lg
+      w: 527px
+
+    .subtitle
+      font-weight: 500
+      font-size: 17px
+      line-height: 1.25
+    
+    .text
+      font-weight: 400
+      font-size: 17px
+      line-height: 1.5
+      color: var(--theme-accent-black)
+      text-align: left
+      margin-top: 5px
+
+    .section__link
+      font-weight: 500
+      font-size: 17px
+      line-height: 1.25
+      color: var(--theme-accent-dark-blue)
+
+.section
+  &--actual
+    flex-direction: row
+    margin-top: 52px
+    padding-bottom: 55px
+    border-bottom: 1px solid var(--theme-accent-grey)
+
+    .cards-wrapper
+      d: flex
+
+    .card
+      d: flex
+      flex-direction: column
+      justify-content: center
+      margin-right: 10px
+
+      +mq-sm
+        margin-left: 44px
+        margin-right: 3px
+
+      &__link
+        w: 86px
+        h: 86px
+        padding: 4px
+        border: 1px solid var(--theme-accent-grey)
+        border-radius: 50%
+
+      &__image
+        w: 100%
+        h: 100%
+        d: block
+        object-fit: cover
+        object-position: center
+        border-radius: 50%
+
+    .text
+      margin-top: 11px
+      font-weight: 400
+      font-size: 14px
+      line-height: 1.2
+      color: var(--theme-accent-black)
+
+.section
+  &--pictures
+    margin-top: -1px
+  .tabs
+    d: flex
+    justify-content: center
+    
+    &__link
+      d: flex
+      justify-content: center
+      align-items: center
+      w: 70px
+      h: 53px
+
+      .text
+        font-weight: 400
+        font-size: 12px
+        line-height: 1.2
+        color: var(--theme-accent-grey)
+        margin-left: 7px
+        
+    &__link--is-active
+      border-top: 1px solid var(--theme-accent-black)
+
+      .text
+        color: var(--theme-accent-black)
+
+.pic-wrapper
+  display: flex
+  justify-content: center
+
+  &__link
+    height: 295px
+    max-width: 295px
+
+  &__image
+    h: 100%
+    w: 100%
+    d: block
+    object-fit: cover
+    object-position: center

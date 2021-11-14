@@ -1,0 +1,183 @@
+.section
+  &--
+    &header
+      background: var(--theme-accent-white_fo)
+      border-bottom: 2px solid var(--theme-accent-white_s)
+      position: relative
+      position: sticky
+      top:0
+      z-index: 99
+
+.header-wrapper
+  w: 100%
+  h: 100px
+  d: flex
+  align-items: center
+  justify-content: space-between
+  z-index: 99
+  
+.header-menu
+  opacity: 0
+  position: absolute
+  top: 102px
+  left: -1000%
+  d: flex
+  w: 0
+  h: max-content
+  background: var(--theme-accent-white_fo)
+  flex-direction: column
+  align-items: center
+  transition: all 2s ease 0s
+  z-index: 2
+  +mq-xl
+    opacity: 1
+    position: relative
+    w: max-content
+    left: 0
+    top: 0
+    flex-direction: row
+  &--
+    &is
+      &-active
+        opacity: 1
+        position: absolute
+        top: 102px
+        left: 0
+        d: flex
+        w: 100%
+        h: 100vh
+        background: var(--theme-accent-white_fo)
+        flex-direction: column
+        align-items: center
+        transition: all 1s ease 0s
+        z-index: 99
+        .header-menu
+          &__
+            &item
+              &--
+                &search
+                  d: none
+  &__
+    &item
+      margin: 10px 0
+      +mq-xl
+        margin: 0 10px
+        padding: 10px 15px
+      &--
+        &search
+          opacity: 0
+          position: absolute
+          top: 102px
+          left: -1000%
+          w: 0
+          .text
+            font-family: Elegant
+            color: var(--theme-accent-aqumarin)
+            font-size: $type-font-size-sm
+          +mq-sm
+            opacity: 1
+            position: relative
+            top: 0
+            left: 0
+            cursor: pointer
+
+  &__
+    &link
+      color: var(--theme-accent-grey_f)
+      font-size: $type-font-size-lg
+      font-weight: 800
+      line-height: 1.55
+      text-transform: uppercase
+      +mq-xl
+        font-size: $type-font-size-2xs
+.search
+  opacity: 0
+  position: absolute
+  top: -50px
+  left: 0
+  w: 100%
+  h: 0
+.search
+  &-is-active
+    opacity: 1
+    top: 102px
+    left: 0
+    h: 100%
+    h: 50px
+    background: var(--theme-accent-white_fo)
+    d: flex
+    align-items: center
+    padding: 5px  20px
+  .search-field
+    w: 100%
+    h: 100%
+    padding-left: 20px
+    border: 1px solid var(--theme-accent-light_gray)
+    border-radius: 10px
+    background: var(--theme-accent-white_fo)
+    font-family: Raleway
+    font-size: $type-font-size-lg
+    font-weight: 500
+    font-style: italic
+    line-height: 22px
+    color: var(--theme-accent-light_gray)
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration
+      d: none
+
+
+.header-burger
+  w: 32px
+  h: 24px
+  position: relative
+  cursor: pointer
+  margin-right: 10px
+  +mq-xl
+    d: none
+  &__
+    &line
+      position: absolute
+      content: ""
+      h: 4px
+      w: 100%
+      background: var(--theme-accent-grey_f)
+      border-radius: 2px
+      transition: all 1s ease 0s
+      &--
+        &top
+          top: 0
+          left: 0
+      &--
+        &center
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+      &--
+        &bottom
+          bottom: 0
+          left: 0
+
+.header-burger
+  transform: rotate(0deg)
+  transition: all 1s ease 0s
+  &--is
+    &-active
+      transform: rotate(90deg)
+      transition: all 1s ease 0s
+      .header-burger
+        &__
+          &line
+            transition: all 1s ease 0s
+            &--
+              &top
+                top: 50%
+                transform: translate(0px, -50%) rotate(-45deg)
+            &--
+              &center
+                opacity: 0
+            &--
+              &bottom
+                bottom: 50%
+                transform: translate(0px, 50%) rotate(45deg)

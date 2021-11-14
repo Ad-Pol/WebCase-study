@@ -1,0 +1,61 @@
+include ./../mixins/index
+header.header
+  include ./sections/general
+
+  +b.section.--header.SECTION
+    +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+      +b.header-wrapper
+
+        +e.image.IMG(
+          src!=('../static/img/logo.webp'),
+          alt=('Startuprr')
+        )
+
+        +b.header-burger
+          +e.line.--top.SPAN 
+          +e.line.--center.SPAN 
+          +e.line.--bottom.SPAN
+
+        +b.header-menu.UL 
+          +e.item.LI
+            +e.link.A(
+              href="#"
+            ) home
+            
+          +e.item.LI
+            +e.link.A(
+              href="#"
+            ) portfolio
+
+          +e.item.LI
+            +e.link.A(
+              href="#"
+            ) blog 
+
+          +e.item.LI
+            +e.link.A(
+              href="#"
+            ) pages 
+            
+          +e.item.LI
+            +e.link.A(
+              href="#"
+            ) features 
+
+          +e.item.LI
+            +e.link.A(
+              href="#"
+            ) mega menu
+
+          +e.item.LI
+            +e.link.A(
+              href="#"
+            ) contact
+          +e.item.--search.js-item-search.LI
+            +b.search-icon.SPAN 
+              +b.text.P &#x55;
+        +b.search
+          +b.search-field.INPUT(
+            type= 'search'
+            placeholder= "Write here..."
+          )

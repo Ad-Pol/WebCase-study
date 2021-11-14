@@ -1,0 +1,114 @@
+.section
+  margin: 0 auto
+  &--
+    &general
+      z-index: 2
+      padding-top: 100px
+      padding-bottom: 50px
+      +mq-md
+        padding-top: 223px
+        padding-bottom: 223px
+      .information
+        d: flex
+        flex-direction: column
+        align-items: center
+        width: max-content
+        margin: 0 auto
+        +mq-fhd
+          margin-left: 377px
+        .text
+          color: var(--theme-accent-dark)
+          font-size: $type-font-size-2sm
+          font-weight: 500
+          text-transform: uppercase
+          w: max-content
+          line-height: 1
+        
+        .subtitle
+          color: var(--theme-accent-dark)
+          font-size: $type-font-size-3xl
+          font-weight: 800
+          text-transform: uppercase
+          margin-top: 9px
+          line-height: 1
+          +mq-md
+            font-size: $type-font-size-6xl
+      
+        &__
+          &item
+            &--
+              &first
+                w: 300px
+                h: max-content
+                padding: 11px 10px
+                background: var(--theme-accent-black)
+                border-radius: 2px
+                margin-top: 20px
+                +mq-md
+                  d: flex
+                  w: max-content
+                  align-items: center
+
+                .title
+                  color: var(--theme-accent-white_f)
+                  font-size: $type-font-size-2sm
+                  font-weight: 800
+                  &:first-letter
+                    color: var(--theme-accent-aqumarin)
+                    font-size: 17px
+                    font-weight: 800
+                    text-transform: uppercase
+                
+                .text
+                  font-weight: 500
+                  color: var(--theme-accent-white_f)
+                  w: 300px
+                  +mq-md
+                    w: max-content
+            
+            &--
+              &second
+                d: flex
+                align-items: center
+                margin-top: 50px
+                w: 100%
+
+                .lines
+                  d: none
+                  h: 6px
+                  w: 100%
+                  border-top: 1px solid var(--theme-accent-white_f)
+                  border-bottom: 1px solid var(--theme-accent-white_f)
+                  +mq-sm
+                    d: block
+                
+                .text
+                  color: var(--theme-accent-dark)
+                  font-size: $type-font-size-2sm
+                  font-weight: 800
+                  text-transform: uppercase  
+                  white-space: nowrap
+                  +mq-md
+                    font-size: $type-font-size-2xl  
+                  &--decorate
+                    color: var(--theme-accent-aqumarin)
+                    margin-right: 5px
+              
+        &__
+          &image
+            margin-left: 20px
+            margin-right: 20px
+            &--
+              &right
+                transform: rotate(180deg)
+
+        .text
+          &--
+            &accept
+              font-family: Elegant
+              color: var(--theme-accent-aqumarin)
+              font-size: $type-font-size-6xl
+              font-weight: 400
+              line-height: 1
+              text-transform: uppercase
+              margin-top: 50px

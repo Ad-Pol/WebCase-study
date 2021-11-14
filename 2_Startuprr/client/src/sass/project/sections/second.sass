@@ -1,0 +1,65 @@
+.section
+  &--
+    &second
+      background: var(--theme-accent-dark)
+      padding-top: 77px
+      position: relative
+    
+      .content
+        w: 100%
+        d: flex
+        flex-direction: column
+        +mq-lg
+          flex-direction: row
+          justify-content: space-between
+          align-items: flex-end
+
+        .items-wrapper
+          d: flex
+          flex-direction: column
+
+          .item
+            d: flex
+            flex-direction: row
+            align-items: center
+            margin-bottom: 67px
+
+            .text
+              &--
+                &pick
+                  color: var(--theme-accent-aqumarin)
+                  font-family: Elegant
+                  font-size: $type-font-size-5xl
+                  margin-right: 24px
+            &__
+              &block
+                .text
+                  color: var(--theme-accent-grey_s)
+                  font-size: $type-font-size-xs
+                  font-weight: 500
+                  line-height: 24px
+                  text-transform: none
+                  line-height: 1
+                  &--
+                    &caption
+                      color: var(--theme-accent-white_f)
+                      font-size: $type-font-size-xs
+                      font-weight: 800
+                      margin-bottom: 23px
+                      text-transform: uppercase
+
+        .pic
+          d: flex
+          justify-content: flex-end
+
+          &__
+            &image
+              w: 100%
+              h: 100%
+              object-fit: cover
+              object-position: center
+              d: block
+              +mq-lg
+                object-fit: contain
+                align-items: flex-end
+                margin-bottom: -20px

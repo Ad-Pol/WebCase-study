@@ -1,0 +1,117 @@
+mixin coube(text, link, href)
+  +b.coube-wrapper.g-cell.g-cols.g-cols--12-xs.g-cols--6-md.g-cols--3-xl
+    +b.coube
+      +b.side.--front
+        +b.coube-text.P= text
+      +b.side.--left
+      +b.side.--right
+      +b.side.--top
+      +b.side.--bottom
+      +b.side.--back
+        +b.coube-link.A(
+          href= href
+        ) #{link}
+
+mixin mainbg
+  +b.bg
+    +e.image.IMG(
+        src= ('../../static/img/backgroundUber.png')
+        alt= "Background"
+      )
+
+mixin mainbg2
+  +b.bg
+    +e.image.IMG(
+        src= ('../../static/img/bg-main2.png')
+        alt= "Background"
+      )
+    
+mixin breadcrumb(thispage, subtitle)
+  +b.breadcrumb
+    +e.link.A(
+      href= "../pages/index.html"
+    ) Home
+    +e.text.P /
+    +e.text.--position.P= thispage
+  +b.subtitle.H2= subtitle
+
+mixin text-wrapper(textWrapper = [])
+  each element in textWrapper
+    +b.text-wrapper(class=element.class)
+      +b.letter-wrapper
+        +b.image.--letter.IMG(
+          src= element.url1
+        )
+        +b.text.--caption.P= element.caption
+      +b.text.P= element.text
+
+mixin new-card(url1, url2, date, name)
+  +b.new-card-wrapper
+    +b.link.A(
+      href= url1
+    )
+      +e.image.IMG(
+        src= url2,
+        alt= "news-card"
+      )
+      +b.text.--date.P= date
+    +b.text.--name.P= name
+
+mixin coment(url1, name, time, coment)
+  +b.coment-card
+    +b.image.--avatar.IMG(
+      src= url1
+    )
+    +b.coment-wrapper
+      +b.name-wrapper 
+        +b.text.--name.P= name
+        +b.text.--time.P= time
+      +b.text.--coment.P= coment
+
+mixin company(url1, url2, name, text)
+  +b.company
+    +e.item.--logo 
+      +b.image.--company.IMG(
+        src= url1,
+        alt= "Logo"
+      )
+      +b.text.P= name
+    +b.text.P= text
+    +e.item.--price 
+      +b.text.P Download 
+      +b.btn.all-buttons.A(
+        href= url2
+      ) 
+        +b.text.P Price list
+        +b.image.IMG(
+          src= ('../../static/img/icon/arrowRight.png')
+        )
+
+mixin product(url1, url2, tag1, tag2, tag3, name)
+  +b.product-card.g-cell.g-cols.g-cols--12-xs.g-cols--6-md.g-cols--4-lg.g-cols--3-xl
+    +b.product.A(
+      href= url1
+    ) 
+      +e.item
+        +b.image.IMG(
+          src= url2,
+          alt = alt
+        )
+      +e.item.--second
+        +b.text-wrapper
+          +b.text.text-tag.P= tag1
+          +b.text.text-tag.P= tag2 
+          +b.text.text-tag.P= tag3
+    +b.text.--producte.P= name
+
+mixin card-contact(title, adress)
+  +b.card-contact
+    +b.text.--title.P= title 
+    +b.text.P= adress
+
+mixin filter-bar(filter = [])
+  each element in filter
+    +b.filter-btn(class=element.class)(
+      data-filter= element.filter
+    )
+      +b.text.P= element.text

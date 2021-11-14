@@ -1,0 +1,90 @@
+.header
+  border-bottom: 1px solid var(--theme-accent-grey)
+  background: var(--theme-accent-white)
+
+.header-wrapper
+  d: flex
+  h: 53px
+  margin: 0 auto
+  justify-content: space-between
+  align-items: center
+  
+  &__image
+    object-fit: contain
+    w: 80px
+    h: 100%
+    object-position: center
+
+    +mq-sm
+    w: 104px
+
+  &__search
+    d: none
+    w: 75px
+    h: 29px
+    background-image: url('../img/icon/search.png')
+    background-repeat: no-repeat
+    background-position: 10px 50%
+    padding-left: 25px
+    transition: all 0.5s linear
+    border: none
+    border: 1px solid var(--theme-accent-grey)
+    border-radius: 3px
+    color: var(--theme-accent-grey)
+
+    +mq-sm
+      d: block
+      w: 215px
+
+  &__search::-webkit-search-decoration,
+  &__search::-webkit-search-cancel-button,
+  &__search::-webkit-search-results-button,
+  &__search::-webkit-search-results-decoration
+    d: none
+  
+.header-container
+  d: flex
+
+  &__link
+    w: 22px
+    h: 22px
+    margin-right: 6px
+    position: relative
+
+    +mq-sm 
+      margin-right: 22px
+  
+  &__link
+    &--user
+      margin-right: 0 !important
+
+  &__image
+    w: 100%
+    h: 100%
+    object-fit: contain
+    object-position: center
+    display: block
+  
+  &__image
+    &--user
+      border-radius: 50%
+      object-fit: cover
+
+  &__element
+    position: absolute
+    top: -5px
+    right: -3px
+    background: var(--theme-accent-red)
+    w: 18px
+    h: 18px
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+
+.text
+  font-size: 12px
+  font-weight: 400
+  line-height: 1.2
+  color: var(--theme-accent-white)
+  text-align: center

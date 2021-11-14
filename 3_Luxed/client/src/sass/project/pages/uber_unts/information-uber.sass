@@ -1,0 +1,117 @@
+.section
+  &--
+    &information-
+      &uber
+        pt: 34px
+        pb: 90px
+
+.block-
+  &information-
+    &uber
+      w: 100%
+      bg: var(--theme-accent-white)
+      pos: relative
+      +mq-lg
+        h: 748px
+        d: flex
+        jc: center
+        ai: center
+      .image
+        &--
+          &bg
+            d: none
+            +mq-lg
+              d: block
+    
+.text-
+  &wrapper
+    d: flex
+    f-dir: column
+    ai: flex-start
+    mb: 20px
+    +mq-lg
+      pos: absolute
+      w: 350px
+      f-dir: row
+      ai: flex-start
+      &--
+        &l
+          t: 74px
+          l: 50px
+          .letter-wrapper
+            order: 1
+            ml: 10px
+        &u
+          t: 74px
+          r: 50px
+          .letter-wrapper
+            mr: 10px
+        &x
+          t: 50%
+          l: 50%
+          trans: translate(-50%, -50%)
+          f-dir: column
+          ai: center
+          .letter-wrapper
+            f-dir: column
+            ai: center
+            .text
+              ta: center
+        &e
+          b: 74px
+          l: 51px
+          ai: flex-end
+          .letter-wrapper
+            order: 1
+            ml: 10px
+        &d
+          b: 74px
+          r: 51px
+          ai: flex-end
+          .letter-wrapper
+            mr: 10px
+    .text
+      color: var(--theme-accent-greyMonday)
+      fs: $type-font-size-2xs
+      @extend .ds-caption--medium
+      lh: 22px
+      &--
+        &caption
+          color: var(--theme-accent-greySunday)
+          fs: $type-font-size-lg
+          @extend .ds-caption--medium
+          ft: none
+          margin: 0
+          
+.letter-
+  &wrapper
+    d: flex
+    f-dir: column
+    ai: flex-start
+    .image
+      w: 83px
+      h: 87px
+
+.text
+  &--
+    &section-
+      &name
+        mt: 77px
+        mb: 37px
+        color: var(--theme-accent-black)
+        fs: $type-font-size-lg
+        lh: 22px
+        @extend .ds-caption--bold
+
+.pic-
+  &wrapper
+    ma: 0 auto
+    jc: center
+    .pic
+      d: flex
+      jc: center
+      ai: center
+      &__
+        &image
+          w: 270px
+          h: 261px

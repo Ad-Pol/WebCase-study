@@ -1,0 +1,148 @@
+.section
+  &--
+    &project
+      position: relative
+      h: 633px
+      .breadcrumb-
+        &wrapper
+          z-index: 3
+          w: 100%
+          h: 60px
+          pos: absolute
+          t: 0
+          l: 50%
+          trans: translate(-50%, 0)
+      .text-
+        &wrap
+          pos: absolute
+          b: 0
+          l: 50%
+          trans: translate(-50%, 0)
+          z-index: 3
+          pointer-events: none
+          w: 100%
+          .text
+            fs: $type-font-size-2xl
+            color: var(--theme-accent-white)
+            @extend .ds-caption--light
+            mb: 120px
+
+.bread-
+  &bg
+    pos: absolute
+    t: 0
+    l: 0
+    w: 100%
+    h: 60px
+    bg: var(--theme-accent-black)
+    opacity: 0.6
+    z-index: 2
+.section
+  &--
+    &about-
+      &project
+        mb: 77px
+        +mq-xl
+          z-index: 3
+          pos: relative
+          mt: -60px
+.info
+  d: flex
+  f-dir: column
+  w: 100%
+  bg: var(--theme-accent-white)
+  pa: 40px 30px 50px 30px
+  +mq-lg
+    f-dir: row
+    jc: space-between
+  &__
+    &item
+      d: flex
+      f-dir: column
+      ai: flex-start
+      mb: 20px
+      &--
+        &first
+          +mq-lg
+            w: 275px
+      .text
+        color: var(--theme-accent-greyMonday)
+        fs: $type-font-size-2xs
+        @extend .ds-caption--medium
+        &--
+          &subtitle
+            color: var(--theme-accent-black)
+            ft: uppercase
+            fs: $type-font-size-lg
+            @extend .ds-caption--bold
+            mb: 35px
+
+  .photos
+    d: flex
+    flex-flow: row wrap
+    .photo-wrapper
+      w: 98px
+      h: 98px
+      d: flex
+      jc: center
+      ai: center
+      pa: 7px
+      ma: 0 3px
+      cursor: pointer
+      .photo
+        pos: relative
+        w: 84px
+        h: 84px
+        &--
+          &bg
+            pos: absolute
+            b: 0
+            l: 0
+            w: 100%
+            h: 0%
+            pos: absolute
+            bg: rgba(0, 0, 0, 0.57)
+            .image
+              pos: absolute
+              l: 50%
+              t: 50%
+              trans: translate(-50%, -50%)
+
+.kategories-
+  &wrapper
+    w: 100%
+    d: flex
+    jc: space-between
+    +mq-sm
+      w: 205px
+
+.swiper-
+  &second
+    pos: repatile
+
+.swiper-
+  &button
+    pos: absolute
+    z-index: 5
+    bg: var(--theme-accent-black)
+    w: 44px
+    h: 44px
+    d: flex
+    jc: center
+    ai: center
+    cursor: pointer
+    &--
+      &next-
+        &project
+          r: 0
+          t: 50%
+          trans: translate(0, -50%) rotate(180deg)
+          +mq-fhd
+            r: 19%
+      &prev-
+        &project
+          l: 0
+          t: 50%
+          trans: translate(0, -50%)
+          +mq-fhd
+            l: 19%

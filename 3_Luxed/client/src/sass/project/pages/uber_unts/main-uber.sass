@@ -1,0 +1,31 @@
+.section
+  &--
+    &main-
+      &uber
+        h: 235px
+        +mq-sm
+        .g-
+          &container
+            pos: relative
+
+.department-
+  &wrapper
+    d: flex
+    ai: center
+    f-dir: column
+    +mq-sm
+      f-dir: row
+      jc: flex-start
+    &__
+      &text,
+      &link
+        color: var(--theme-accent-white)
+        fs: $type-font-size-3xs
+        @extend .ds-caption--medium
+      &text
+        mr: 5px
+        &--
+          &shot
+            d: none
+            +mq-sm
+              d: block

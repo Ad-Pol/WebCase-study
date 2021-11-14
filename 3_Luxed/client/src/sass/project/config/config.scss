@@ -1,0 +1,46 @@
+$TONE_GENERATE_THEME: false;
+$TONE_GENERATE_PALETTES: false;
+
+$theme-default: (
+  accent: (
+    white: #fff,
+    whiteFirst: #f6f8f9,
+    black: #000,
+    dark: #161617,
+    greySunday: #363636,
+    greyMonday: #8d8d8d,
+    greyTuesday: #919191,
+    greyWednesday: #979797,
+    greyThursday: #747474,
+    greyFriday: #dfe1e2,
+    greySaturday: #727272,
+    greyOneMore: #e7e9ee,
+    red: 	#FF0000,
+  )
+);
+
+$type-font-size-3xs: 12px;
+$type-font-size-2xs: 13px;
+$type-font-size-xs: 14px;
+$type-font-size-sm: 15px;
+$type-font-size-2sm: 18px;
+$type-font-size-lg: 20px;
+$type-font-size-2lg: 23px;
+$type-font-size-xl: 25px;
+$type-font-size-2xl: 50px;
+$type-font-size-3xl: 66px;
+$type-font-size-4xl: 71px;
+$type-font-size-5xl: 180px;
+
+$font-weight-group: (
+    thin: 100,
+    light: 300,
+    regular: 400,
+    medium: 500,
+    bold: 700,
+    extrabold: 800,
+    black: 900
+);
+
+$MQ_INCLUDE_XS: true;
+$MQ_INCLUDE_XL: true;

@@ -1,0 +1,22 @@
+$mq-size-mac: 1430px !default
+$mq-size-fhd: 1920px !default
+$mq-size-map: ('fhd': $mq-size-fhd, 'mac': $mq-size-mac)
+    
+@mixin mq-mac
+  @media (map-get($mq-queries-from-map, 'mac'))
+    @content
+@mixin mq-till-mac
+  @media (map-get($mq-queries-till-map, 'mac'))
+    @content
+
+@mixin mq-fhd
+  @media (map-get($mq-queries-from-map, 'fhd'))
+    @content
+@mixin mq-till-fhd
+  @media (map-get($mq-queries-till-map, 'fhd'))
+    @content
+
+
+@media (prefers-reduced-motion: reduce)
+  *   
+    transition-duration: initial !important

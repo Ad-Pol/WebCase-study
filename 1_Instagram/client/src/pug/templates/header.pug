@@ -1,0 +1,42 @@
+include ./../mixins/index
+header.header
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg
+    +b.header-wrapper 
+      +e.image.IMG(
+        src!=('../static/img/logo.svg'),
+        alt=('Instagram')
+        )
+
+      +e.search.INPUT(
+        type="search",
+        placeholder="Search"
+      ) 
+
+      +b.header-container
+        +e.link.A(
+          href="#")
+            +e.image(
+            src="../static/img/icon/home.svg",
+            alt="Home")
+        +e.link.A(
+          href="#")
+            +e.image(
+              src="../static/img/icon/direct.svg",
+              alt="Direct")
+            +e.element.SPAN 
+              P.text 5
+        +e.link.A(
+          href="#")
+            +e.image(
+              src="../static/img/icon/nav.svg",
+              alt="Navigation")
+        +e.link.A(
+          href="#")
+            +e.image(
+              src="../static/img/icon/notif.svg",
+              alt="Notification")
+        +e.link--user.A(
+          href="#")
+            +e.image--user(
+              src="../static/img/ava.webp",
+              alt="User")

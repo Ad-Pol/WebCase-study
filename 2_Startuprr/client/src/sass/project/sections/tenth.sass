@@ -1,0 +1,58 @@
+.section
+  &--
+    &tenth
+      background: var(--theme-accent-dark)
+      padding-top: 50px
+      position: relative
+      padding-bottom: 50px
+      .slick-wrapper
+        w: 270px
+        margin: 0 auto
+        +mq-md
+          w: 560px
+        +mq-lg
+          w: 850px
+        +mq-xl
+          w: 1140px
+        .card
+          &__
+            &link
+              w: 270px
+              h: 160px
+              d: flex
+              justify-content: center
+              align-items: center
+              background: var(--theme-accent-black)
+              .image
+                object-fit: cover
+                object-position: center
+                display: block
+                filter: brightness(0.5)
+
+      .control
+        w: 30px
+        h: 30px
+        justify-content: center
+        align-items: center
+        background: var(--theme-accent-white_f)
+        border-radius: 3px
+        d: flex
+        position: absolute
+        cursor: pointer
+        &--
+          &next
+            right: -30px
+            top: 50%
+            transform: translate(0, -50%)
+        &--
+          &prev
+            left: -30px
+            top: 50%
+            transform: translate(0, -50%)
+        .text
+          color: var(--theme-accent-black)
+          font-family: Elegant
+          font-size: 25px
+.slick-slide
+  width: 270px
+  margin: 0 10px

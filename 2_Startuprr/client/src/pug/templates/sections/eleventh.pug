@@ -1,0 +1,52 @@
+include ../../mixins/index
+-
+  const price = [
+    [{
+      plan: "standard plan",
+      dollars: "19",
+      cents: "99",
+      offer1: "5 Projects",
+      offer2: "5 GB Storage",
+      offer3: "Unlimited Users",
+      offer4: "10 GB Bandwith",
+      offer5: "Enhanced Security"
+    }],
+    [{
+      plan: "premium plan",
+      dollars: "29",
+      cents: "99",
+      offer1: "10 Projects",
+      offer2: "15 GB Storage",
+      offer3: "Unlimited Users",
+      offer4: "20 GB Bandwith",
+      offer5: "Enhanced Security"
+    }],
+    [{
+      class: "--advance",
+      plan: "advanced plan",
+      dollars: "49",
+      cents: "99",
+      offer1: "15 Projects",
+      offer2: "30 GB Storage",
+      offer3: "Unlimited Users",
+      offer4: "50 GB Bandwith",
+      offer5: "Enhanced Security"
+    }],
+    [{
+      plan: "ultimate plan",
+      dollars: "99",
+      cents: "99",
+      offer1: "Unlimited Projects",
+      offer2: "Unlimited Storage",
+      offer3: "Unlimited Users",
+      offer4: "Unlimite Bandwith",
+      offer5: "Enhanced Security"
+    }]
+  ]
+
++b.section.--eleventh.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.cards-wrapper
+      each element in price
+        +price(element)
+

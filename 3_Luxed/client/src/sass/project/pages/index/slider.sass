@@ -1,0 +1,102 @@
+.section
+  &--
+    &slider
+      mt: -106px
+
+.swiper
+  pos: relative
+  .text
+    opacity: 0.35
+    color: var(--theme-accent-white)
+    fs: $type-font-size-3xl
+    @extend .ds-caption--thin
+    ta: center
+    ft: uppercase
+    pos: absolute
+    t: 148px
+    z-index: 3
+    pointer-events: none
+    +mq-md
+      l: 50%
+      trans: translate(-50%, 0)
+    +mq-xl
+      trans: translate(0, 0)
+      ml: 19.5%
+      l: 0
+      t: 259px
+
+.swiper-wrapper
+  d: flex
+
+.wrap
+  w: 100%
+  h: 633px
+
+.image-
+  &slide
+    overflow: hidden
+    w: 100%
+    h: 100%
+
+.controle-
+  &wrapper
+    pos: absolute
+    w: 100px
+    h: 169px
+    d: none
+    f-dir: column
+    ai: flex-end
+    jc: space-between
+    r: 19.5%
+    t: 50%
+    trans: translate(0, -50%)
+    z-index: 2
+    +mq-lg
+      d: flex
+
+.swiper-
+  &button-
+    &prev
+      cursor: pointer
+
+.swiper-
+  &button-
+    &next
+      cursor: pointer
+      .controle-image
+        trans: rotate(180deg)
+
+.swiper-
+  &pagination
+    d: flex
+    f-dir: column
+    jc: space-between
+    ai: flex-end
+    
+.swiper-
+  &pagination-
+    &bullet
+      d: flex
+      jc: space-between
+      ai: center
+      .number
+        opacity: 0
+      .band
+        w: 10px
+        h: 2px
+        bg: var(--theme-accent-white)
+        opacity: 0.3
+        ml: 5px
+      &-active
+        d: flex
+        jc: space-between
+        ai: center
+        .number
+          opacity: 1
+          color: var(--theme-accent-white)
+        .band
+          w: 27px
+          h: 2px
+          b: var(--theme-accent-white)
+          opacity: 1
+          pr: 30px

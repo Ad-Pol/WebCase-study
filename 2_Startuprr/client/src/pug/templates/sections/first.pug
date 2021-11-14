@@ -1,0 +1,40 @@
+include ../../mixins/index
+-
+  const offer = [
+    [{
+      url: "#",
+      text: "read more",
+      ico: "&#xe00e;",
+      caption: "responsive & multipurpose",
+      description: "Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan ornare quis.",
+      class: "",
+    }],
+    [{
+      url: "#",
+      text: "read more",
+      ico: "&#xe0f9;",
+      caption: "easy customization",
+      description: "Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan ornare quis.",
+      class: "text--moron",
+    }],
+    [{
+      url: "#",
+      text: "read more",
+      ico: "&#xe028;",
+      caption: "awesome friendly support",
+      description: "Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan ornare quis.",
+      class: "",
+    }]
+  ]
+
++b.section.--first.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +sectionTitleWhite(
+      'what we',
+      'offer',
+      'We offer our customers the best services & solutions, this is our main services list'
+    )
+ 
+    +b.cards-wrapper 
+      each element in offer
+        +offer(element)

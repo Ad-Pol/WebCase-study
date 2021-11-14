@@ -1,0 +1,276 @@
+.new-
+  &card-
+    &wrapper
+      .link
+        d: block
+        pos: absolute
+        w: 100%
+        h: 222px
+        pos: relative
+        overflow: hidden
+        +mq-sm
+          w: 369px
+        &__
+          &image
+            w: 100%
+            h: 100%
+      .text
+        &--
+          &date
+            pos: absolute
+            b: 25px
+            r: 30px
+      .text
+        &--
+          &name
+            fs: $type-font-size-sm
+            @extend .ds-caption--bold
+            color: var(--theme-accent-black)
+            mt: 20px
+
+.coment-card
+  pa: 25px
+  bg: var(--theme-accent-white)
+  d: flex
+  f-dir: column
+  br-b: 1px solid var(--theme-accent-greyMonday)
+  +mq-md
+    f-dir: row
+    ai: flex-start
+  .image
+    w: 166px
+    h: 166px
+    br-radius: 50%
+    +mq-md
+    w: 66px
+    h: 66px
+    mr: 28px
+  .coment-wrapper
+    .text
+      fs: $type-font-size-2xs
+      lh: 28px
+      color: var(--theme-accent-greyMonday)
+    .name-wrapper
+      mb: 30px
+      .text
+        &--
+          &name
+            @extend .ds-caption--bold
+            color: var(--theme-accept-black)
+          &time
+            @extend .ds-caption--medium
+    .text
+      lh: 22px
+
+.coment-card
+  &:nth-last-child(1)
+    br: none
+
+.company
+  d: flex
+  f-dir: column
+  ai: flex-start
+  pa: 20px 0 20px 20px
+  bg: var(--theme-accent-white)
+  +mq-lg
+    pa: 70px 0 50px 50px
+    f-dir: row
+    jc: space-between
+    ai: center
+  &__
+    &item
+      .text
+        color: var(--theme-accent-black) !important
+        fs: $type-font-size-lg !important
+        @extend .ds-caption--bold
+        +mq-lg
+          w: min-content !important
+          mb: 0 !important
+      &--
+        &logo
+          mb: 20px
+          +mq-lg
+            d: flex
+            ai: center
+          .image
+            w: 60px
+            h: 70px
+            +mq-lg
+              mr: 18px
+        &price
+          .text
+            +mq-lg
+              mb: 30px !important
+          .btn
+            d: flex
+            ai: center
+            jc: space-between
+            pa: 0 20px
+            w: 237px
+            h: 57px
+            bg: var(--theme-accent-greyThursday)
+            .text
+              color: var(--theme-accent-white) !important
+              fs: $type-font-size-sm !important
+              ft: uppercase
+              @extend .ds-caption--regular 
+              mb: 0
+              +mq-lg
+                w: max-content !important
+                mb: 0 !important
+  .text
+    color: var(--theme-accent-greyMonday)
+    fs: $type-font-size-2xs
+    @extend .ds-caption--medium
+    lh: 22px
+    mb: 20px
+    +mq-lg
+      w: 450px
+    +mq-xl
+      w: 527px
+
+.product
+  &-card
+    d: flex
+    f-dir: column
+    ai: center
+    .product
+      ma: 0
+      w: 270px
+      h: 311px
+      d: block
+      pos: relative
+      overflow: hidden
+      &__
+        &item
+          w: 100%
+          h: 100%
+          &--
+            &second
+              bg: rgba(0, 0, 0, 0.71)
+              pos: absolute
+              b: 0 
+              l: 0
+              d: flex
+              jc: center
+              ai: center
+              h: 0
+              .text
+                &-wrapper
+                  w: 70%
+                  jc: space-between
+                  d: none
+                  .text
+                    color: var(--theme-accent-white)
+                    @extend .ds-caption--bold
+                    fs: $type-font-size-3xs
+                    ft: uppercase
+                    cursor: pointer
+    .text
+      &--
+        &producte
+          mt: 20px
+          color: var(--theme-accent-black)
+          fs: $type-font-size-sm
+          @extend .ds-caption--bold
+
+.bg
+  w: 100%
+  h: 235px
+  pos: absolute
+  t: 72px
+  +mq-lg
+    t: 106px
+  &__
+    &image
+      h: 100%
+      w: 100%
+
+
+.breadcrumb
+  pt: 20px
+  d: flex
+  mb: 57px
+  &__
+    &link,
+    &text
+      color: var(--theme-accent-white)
+      fs: $type-font-size-3xs
+      @extend .ds-caption--medium
+      mr: 5px
+
+.subtitle
+  color: var(--theme-accent-white)
+  fs: $type-font-size-xl
+  @extend .ds-caption--light
+  mb: 27px
+  lh: 1
+  +mq-sm
+    fs: $type-font-size-2xl
+
+.text
+  &--
+    &date
+      fs: $type-font-size-xs
+      @extend .ds-caption--bold
+      color: var(--theme-accent-whiteFirst)
+  
+.card-contact
+  w: 100%
+  pa: 30px
+  bg: var(--theme-accent-white)
+  box-shadow: 0 36px 32px rgba(61, 78, 95, 0.08)
+  mb: 20px
+  +mq-sm
+    w: 370px
+  .text
+    fs: $type-font-size-2xs
+    @extend .ds-caption--medium
+    lh: 22px
+    color: var(--theme-accent-greyMonday)
+    &--
+      &title
+        color: var(--theme-accent-black)
+        mb: 25px
+
+.filter-
+  &wrapper
+    w: 100%
+    h: 100%
+    pa: 5px
+    d: flex
+    bg: var(--theme-accent-white)
+    jc: flex-start
+    flex-flow: row wrap
+    mb: 35px
+    z-index: 2
+    +mq-md
+      pa: 0
+      h: 87px
+      ai: center
+    +mq-xl
+      mt: -50px
+      pos: relative
+.filter-
+  &btn
+    h: 39px
+    d: flex
+    jc: center
+    ai: center
+    cursor: pointer
+    ma: 5px 10px
+    +mq-xl
+      ma: 0 20px
+    &--
+      &is-
+        &active
+          br-b: 2px solid var(--theme-accent-black)
+          .text
+            @extend .ds-caption--bold
+    .text
+      white-space: nowrap
+      color: var(--theme-accent-black)
+      fs: $type-font-size-sm
+      @extend .ds-caption--light
+      ft: uppercase
+      pointer-events: none

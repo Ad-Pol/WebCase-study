@@ -1,0 +1,36 @@
+.section
+  &--
+    &main-
+      &product
+        h: 235px
+        +mq-sm
+          pb: 45px
+        .g-
+          &container
+            pos: relative
+            d: flex
+            jc: space-between
+            ac: center
+            .main-block
+              d: flex
+              f-dir: column
+              jc: center
+              &--
+                &right
+                  +mq-md
+                    f-dir: row
+                    ai: center
+                  .link
+                    d: block
+                    color: var(--theme-accent-white)
+                    fs: $type-font-size-xl
+                    @extend .ds-caption--light
+                    lh: 22px
+                    ft: uppercase
+                    &--
+                      &is
+                        &-active
+                          @extend .ds-caption--bold
+                          br-b: 2px solid var(--theme-accent-white)
+                          +mq-md
+                            ml: 30px

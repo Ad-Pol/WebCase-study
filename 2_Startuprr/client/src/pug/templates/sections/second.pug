@@ -1,0 +1,36 @@
+include ../../mixins/index
+
++b.section.--second.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +marker("0")
+    +sectionTitleDark(
+      'amazing',
+      'features',
+      'With unlimited features that we offer, we promise it’s possible to make everything that was impossible for you !'
+    )
+    
+    +b.content
+      +b.items-wrapper 
+        +b.item 
+          +b.text.text--pick.P &#xe00e;
+          +e.block.SPAN 
+            +b.text.text--caption.P responsive & multipurpose
+            +b.text.P Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.
+        
+        +b.item 
+          +b.text.text--pick.P &#xe0f9;
+          +e.block.SPAN 
+            +b.text.text--caption.P easy customization
+            +b.text.P Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.
+        
+        +b.item 
+          +b.text.text--pick.P &#xe033;
+          +e.block.SPAN 
+            +b.text.text--caption.P unlimited features
+            +b.text.P Proin in magna a ipsum viverra scelerisq enec turp, nunc vestibulum.
+      
+      +b.pic
+        +e.image.IMG(
+          src=('../static/img/ipads.webp')
+          alt=('IPad')
+        )

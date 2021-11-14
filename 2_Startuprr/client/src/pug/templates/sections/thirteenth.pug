@@ -1,0 +1,72 @@
+include ../../mixins/index
+
++b.section.--thirteenth.SECTION
+  +b.image.IMG(
+    src=('../static/img/logo.webp'),
+    alt=('Startuprr')
+  )
+  +b.social-wrapper
+    +b.link.A(
+      href="#"
+    ) &#xe093;
+    +b.link.A(
+      href="#"
+    ) &#xe094;
+    +b.link.A(
+      href="#"
+    ) &#xe095;
+    +b.link.A(
+      href="#"
+    ) &#xe09e;
+    +b.link.A(
+      href="#"
+    ) &#xe09c;
+    +b.link.A(
+      href="#"
+    ) &#xe0a3;
+    +b.link.A(
+      href="#"
+    ) &#xe09d;
+    +b.link.A(
+      href="#"
+    ) &#xe09b;
+    +b.link.A(
+      href="#"
+    ) &#xe09f;
+    +b.link.A(
+      href="#"
+    ) &#xe0a4;
+    +b.link.A(
+      href="#"
+    ) &#xe098;
+  +b.map-container
+    +b.map#map
+
+    +b.form.js-form-ajax#form.FORM(
+      data-action= 'https://httpbin.org/post',
+      data-method= 'POST'
+    )
+      +b.field.--name.INPUT(
+        type= 'text'
+        placeholder= 'Name',
+        minlength= '2',
+        maxlength= '50',
+        pattern= '^[a-zA-Z\s]+$',
+        name= 'name',
+        data-rule= 'required|name'
+      )
+      +b.field.--email.INPUT(
+        type= 'email',
+        placeholder= 'Email Address',
+        name= 'email'
+        data-rule= 'required|email'
+      )
+      +b.field.--text.TEXTAREA(
+        type= 'text'
+        placeholder= 'Message ...',
+        maxlength= '150',
+        name= 'message'
+      )
+      +b.btn.BUTTON(
+        type= 'submit'
+      ) submit message

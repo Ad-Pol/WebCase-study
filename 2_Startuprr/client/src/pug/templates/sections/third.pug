@@ -1,0 +1,48 @@
+include ../../mixins/index  
+-
+  const cards = [
+    [{
+      ico: "&#xe00e;",
+      title: "responsive & multipurpose",
+      subtitle: "Desktops, Tablets & Phones",
+      description: "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    }],
+    [{
+      ico: "&#xe0f9;",
+      title: "easy customization",
+      subtitle: "One Click Demo Content Installation",
+      description: "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    }],
+    [{
+      ico: "&#xe033;",
+      title: "unlimited features",
+      subtitle: "Shortcodes, Typography & Different Layouts",
+      description: "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    }],
+    [{
+      ico: "&#xe056;",
+      title: "clean & modular coding",
+      subtitle: "100% Clean, Valid & Well-Commented Coding",
+      description: "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    }],
+    [{
+      ico: "&#xe07a;",
+      title: "the best e-commerce solutions",
+      subtitle: "WooCommerce Fully Integration",
+      description: "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    }],
+    [{
+      ico: "&#xe028;",
+      title: "awesome friendly support",
+      subtitle: "Free Lifetime Support & Updates",
+      description: "Proin in magna a ipsum viverra scelerisque eu nec turp, Nunc vestibulum fringilla accumsan. Praesent arcu turpis."
+    }]
+  ]
+
+
++b.section.--third.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.card-wrapper.g-row.g-row--appearance_spaced
+        each card in cards
+          +card(card)
+      

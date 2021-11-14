@@ -1,0 +1,5 @@
+import './burger'
+import './slick'
+import './map'
+import './search'
+import './formvalidator'

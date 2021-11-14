@@ -1,0 +1,64 @@
+@import '../../../node_modules/swiper/swiper.scss'
+img
+  of: cover
+  op: center
+  d: block
+  
+a
+  text-decoration: none
+
+body
+  bg: var(--theme-accent-whiteFirst)
+  ff: Montserrat
+
+.field
+  pa: 0
+  ma: 0
+  br: none
+  outline: none
+  pl: 20px
+  pr: 50px
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration
+    d: none
+
+.btn
+  br: none
+  cursor: pointer
+
+textarea
+  resize: none
+
+
+input
+  &.error
+    br-b: 2px solid var(--theme-accent-red)
+    bg-image: url(../../static/img/icon/alarm.png) !important
+    bg-repeat: no-repeat !important
+    background-position: 95% 50% !important
+
+div
+  &.error
+    color: var(--theme-accent-red)
+    pos: absolute
+    l: 0
+    t: -50%
+
+.form
+  &--
+    &coment
+      div
+        &.error
+          color: var(--theme-accent-red)
+          pos: absolute
+          l: 0
+          t: -5%
+          +mq-md
+            t: -10%
+          &:nth-last-child(1)
+            t: 40%
+            +mq-md
+              l: 350px
+              t: -10%

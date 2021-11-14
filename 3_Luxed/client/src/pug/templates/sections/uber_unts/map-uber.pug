@@ -1,0 +1,66 @@
+include ../../../mixins/index
++b.section.--map-uber.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.section-name-wrap 
+      +b.text.--section-name.P ADRESS
+      +b.maps 
+        +b.text.--section-name.P GOOGLE MAPS | 
+        +b.text.--map.P MAPS
+    +b.map-wrapper 
+      +b.communications-wprapper 
+        +b.communications.--location
+          +e.image
+            +b.image.IMG(
+              src= ('../../static/img/icon/communications/location.png'),
+              alt= "location"
+            )
+          +e.text-wrapper
+            +b.text.P LUXED Beleuchtungen GmbH 
+            +b.text.P Benzburweg 18A
+            +b.text.P CH- 4410 Liestal
+        
+        +b.communications.--phones
+          +e.image
+            +b.image.IMG(
+              src= ('../../static/img/icon/communications/phone.png'),
+              alt= "phone"
+            )
+          +e.text-wrapper
+            +b.link.connection.A(
+              href= "tel:+41619030380"
+            ) +41 61 903 03 80
+            +b.link.connection.A(
+              href= "tel:+41619030380"
+            ) +41 61 903 03 80
+       
+        +b.communications.--mail
+          +e.image
+            +b.image.IMG(
+              src= ('../../static/img/icon/communications/mail.png'),
+              alt= "mail"
+            )
+          +e.text-wrapper
+            +b.link.connection.A(
+                href= "mailto:TESTTEST@gmail.com"
+              ) TESTTEST@gmail.com
+        +b.communications.--time
+          +e.image
+            +b.image.IMG(
+              src= ('../../static/img/icon/communications/time.png'),
+              alt= "time"
+            )
+          +e.text-wrapper
+            +b.text.P Mo – Do  
+            +b.text.P 08.00 – 12.00 Uhr
+            +b.text.P 13.00 – 17.30 Uhr
+            +b.BR
+            +b.text.P Fr
+            +b.text.P 08.00 – 12.00 Uhr
+            +b.text.P 13.00 – 16.30 Uhr
+      +b.map.--uber#map
+      +b.infowindow
+        +b.text.P Name der Region
+        +b.text.P LUXED Beleuchtungen GmbH Benzburweg 18A CH- 4410 Liestal
+        +b.link.A(
+          href= "#"
+        ) GET DIRECTION

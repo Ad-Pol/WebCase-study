@@ -1,0 +1,192 @@
+.section
+  &--
+    &content
+      pt: 40px
+      .g-
+        &container
+          d: flex
+          w: 100%
+          jc: space-between
+
+    &primary
+      +mq-md
+        w: 734px
+      .content-
+        &block
+          &--
+            &first
+              mt: 49px
+              .content-
+                &block
+                  &__
+                    &text
+                      mb: 15px
+                      color: var(--theme-accent-greyMonday)
+                      fs: $type-font-size-2xs
+                      @extend .ds-caption--medium
+                      lh: 22px
+                      &--
+                        &description
+                          color: var(--theme-accent-black)
+                          fs: $type-font-size-xl
+
+            &second
+              pt: 35px
+              pb: 40px
+              th
+                fs: $type-font-size-2xs
+              .table
+                fs: $type-font-size-2xs
+              .tabel-
+                &bg
+                  bg: var(--theme-accent-greyOneMore)
+
+            &third
+              d: flex
+              .black-
+                &line
+                  min-w: 4px
+                  bg: var(--theme-accent-black)
+              .text
+                ma: 16px 0
+                fs: $type-font-size-2xs
+                @extend .ds-caption--medium
+                lh: 22px
+                color: var(--theme-accent-greyMonday)
+                ml: 50px
+
+            &fourth
+              pt: 60px
+              .text-
+                &wrapper
+                  pos: relative
+                  d: flex
+                  f-dir: row
+                  ai: flex-start
+                  w: 100%
+                  mb: 20px
+                  .dot
+                    min-w: 8px
+                    min-h: 8px
+                    bg: var(--theme-accent-black)
+                    mr: 40px
+                  .text
+                    fs: $type-font-size-2xs
+                    @extend .ds-caption--medium
+                    lh: 22px
+                    color: var(--theme-accent-greyMonday)
+            
+            &sixth
+              .content-
+                &block
+                  &__
+                    &item
+                      d: flex
+                      ai: flex-start
+                      mb: 20px
+                      .text
+                        fs: $type-font-size-2xs
+                        @extend .ds-caption--medium
+                        lh: 22px
+                        color: var(--theme-accent-greyMonday)
+                        &--
+                          &number
+                            color: var(--theme-accent-black)
+                            fs: $type-font-size-sm
+                            @extend .ds-caption--black
+                            lh: 22px
+                            mr: 40px
+            &seventh
+              mb: 25px
+              .content-
+                &block
+                  &__
+                    &item
+                      &--
+                        &tags
+                          pa: 30px
+                          d: flex
+                          flex-flow: row wrap
+                          jc: space-between
+                          bg: var(--theme-accent-white)
+                          .text
+                            color: var(--theme-accent-black)
+                            fs: $type-font-size-lg
+                            @extend .ds-caption--bold
+                            lh: 22px
+                            ft: uppercase
+                            mr: 45px
+                          .link-
+                            &wrapper 
+                              d: flex
+                              .link
+                                color: var(--theme-accent-greyMonday)
+                                fs: $type-font-size-2xs
+                                @extend .ds-caption--medium
+                                lh: 22px
+                                ft: uppercase
+                                mb: 15px
+
+            &eighth
+              pa: 30px
+              bg: var(--theme-accent-white)
+              mb: 40px
+              .text
+                mb: 20px
+                fs: $type-font-size-2xs
+                color: var(--theme-accnt-greySaturday)
+              .form
+                d: flex
+                flex-flow: row wrap
+                jc: flex-end
+                pos: relative
+                .field
+                  pl: 20px
+                  bg: var(--theme-accent-whiteFirst)
+                  w: 100%
+                  h: 57px
+                  mb: 14px
+                  color: var(--theme-accent-greySunday)
+                  fs: $type-font-size-sm
+                  @extend .ds-caption--thin
+                  +mq-md
+                    w: 48%
+                  &--
+                    &text
+                      pt: 20px
+                      h: 123px
+                      +mq-md
+                        w: 100%
+                .field-
+                  &wrapper
+                    w: 100%
+                    d: flex
+                    f-dir: column
+                    +mq-md
+                      f-dir: row
+                      justify-content: space-between
+                .btn
+                  w: 100%
+                  h: 57px
+                  d: flex
+                  jc: center
+                  ai: center
+                  color: var(--theme-accent-white)
+                  bg: var(--theme-accent-greyThursday)
+                  fs: $type-font-size-sm
+                  @extend .ds-caption--regular
+                  +mq-sm
+                    w: 325px
+.section
+  &--
+    &secondary
+      w: 369px
+      d: none
+      f-dir: column
+      mb: 22px
+      +mq-xl
+        d: flex
+      .new-
+        &card-
+          &wrapper
+            mb: 45px

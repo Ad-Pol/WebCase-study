@@ -1,0 +1,76 @@
+.section
+  &--
+    &ninth
+      background: var(--theme-accent-aqumarin)
+      padding-top: 80px
+      padding-bottom: 110px
+      position: relative
+      .control
+        w: 30px
+        h: 30px
+        justify-content: center
+        align-items: center
+        background: var(--theme-accent-dark)
+        border-radius: 3px
+        position: absolute
+        d: flex
+        cursor: pointer
+        &--
+          &next
+            bottom: -70%
+            left: 50%
+            transform: translate(5%, 0)
+        &--
+          &prev
+            bottom: -70%
+            left: 50%
+            transform: translate(-105%, 0)
+        .text
+          color: var(--theme-accent-white_f)
+          font-family: Elegant
+          font-size: 25px
+      .card
+        d: flex
+        flex-direction: column
+        align-items: center
+        &__
+          &item
+            d: flex
+            margin: 0 auto
+            margin-bottom: 30px
+            &--
+              &first
+                w: 247px
+                h: 40px
+                justify-content: center
+                align-items: center
+                background: var(--theme-accent-white_f)
+                border-radius: 3px
+                .text
+                  &--
+                    &name
+                      color: var(--theme-accent-aqumarin)
+                      font-size: $type-font-size-2xs
+                      font-weight: 800
+                      text-transform: uppercase
+                      margin-right: 5px
+                  &--
+                    &position
+                      color: var(--theme-accent-light_grey)
+                      font-size: $type-font-size-3xs
+                      font-weight: 500
+                      font-style: italic
+        .text
+          &--
+            &quotes
+              color: var(--theme-accent-white_f)
+              font-size: $type-font-size-lg
+              font-weight: 500
+              text-align: center
+          &--
+            &pic
+              color: var(--theme-accent-white_f)
+              font-family: Elegant
+              font-size: $type-font-size-lg
+              line-height: 1
+      

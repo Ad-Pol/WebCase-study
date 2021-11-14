@@ -1,0 +1,88 @@
+include ../../mixins/index
++b(class=headerMain ? 'header' : 'header--white').HEADER
+
+  +b.section.--header
+    +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+      +b.header-wrapper
+        +b.menu-burger 
+          +e.item.--top.SPAN 
+          +e.item.--center.SPAN 
+          +e.item.--bottom.SPAN
+        +b.logo-link.A(
+          href= "../pages/index.html"
+        ) 
+          +b.logo-image.IMG(
+            src= ('../../static/img/logo.png'),
+            alt= "luXed"
+          )
+        +b.header-menu.UL 
+          +e.item.LI 
+            +b.menu-link.A(
+              href= "../pages/produkte.html"
+            ) Produkte
+          +e.item.LI
+            +b.menu-link.A(
+              href= "../pages/uberunts.html"
+            ) Über Uns
+          +e.item.LI 
+            +b.menu-link.A(
+              href= "../pages/projekte.html"
+            ) Projekte
+          +e.item.LI
+            +b.menu-link.A(
+              href= "../pages/allenews.html"
+            ) News
+          +e.item.LI 
+            +b.menu-link.A(
+                href= "../pages/agenten.html"
+              ) Agenten
+          +e.item.LI
+            +b.menu-link.A(
+                href= "../pages/fachpartner.html"
+              ) Fachpartner
+          
+          +e.item.--lang.LI
+            +b.menu-link.A(
+              href= "#"
+            )
+              +b.text--lang.--de.P DE 
+
+            +b.text.--lang.P |
+            
+            +b.menu-link.A(
+              href= "#"
+            )
+              +b.text.--lang.--fr  FR
+        +b.form.header-search.FORM(
+          action= "../pages/results.html",
+        )
+          +b.field.js-input.INPUT(
+            type= "search"
+            placeholder= "What are we looking for?"
+          )
+          +b.btn.all-buttons.js-b.BUTTON(
+            type= 'submit'
+          ) 
+            +b.image.js-b.IMG(
+            src= ('../../static/img/icon/search.png')
+            )
+        +b.search
+          +b.image.search-js.IMG(
+          src= ('../../static/img/icon/search.png')
+          )
+        +b.social-wrapper
+          +e.link.A(
+            href= "https://www.facebook.com/",
+            target= "_blank"
+          ) 
+            +b.image.--ico.IMG(
+              src= ('../../static/img/icon/fb.svg')
+            )
+          +e.link.A(
+            href= "https://www.linkedin.com/",
+            target= "_blank"
+          ) 
+            +b.image.--ico.IMG(
+              src= ('../../static/img/icon/link.svg')
+            )
+    +b.line.SPAN

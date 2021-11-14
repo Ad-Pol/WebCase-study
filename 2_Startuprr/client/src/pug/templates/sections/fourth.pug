@@ -1,0 +1,47 @@
+include ../../mixins/index
+-
+  const circle = [
+    [{
+      dash: ('75'),
+      procent: "75%",
+      text: "web design",
+    }],
+    [{
+      dash: ('92'),
+      procent: "92%",
+      text: "web development",
+    }],
+    [{
+      dash: ('68'),
+      procent: "68%",
+      text: "speed optimization",
+    }],
+    [{
+      dash: ('100'),
+      procent: "100%",
+      text: "customer support",
+    }],
+    [{
+      dash: ('83'),
+      procent: "83%",
+      text: "marketing",
+    }],
+    [{
+      dash: ('50'),
+      procent: "50%",
+      text: "advertisement",
+    }],
+  ]
+
++b.section.--fourth.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +marker("1")
+    +sectionTitleDark(
+      'our powerful',
+      'skills',
+      'We’re good and experienced at different things and areas and we promise about qulity of our works'
+    )
+    
+    +b.circles-wrapper.g-row.g-row--appearance_spaced
+      each element in circle
+        +circle(element)

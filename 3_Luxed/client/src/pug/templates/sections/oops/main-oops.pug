@@ -1,0 +1,23 @@
+include ../../../mixins/index
+
++b.section.--main-oops.SECTION
+  +b.image.IMG(
+    src= ('../../static/img/oops.png'),
+    alt= "background"
+    )
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.oops-wrapper
+      +b.text.--title.P Oops! That page can’t be found.
+      +b.text.--subtitle.P Oops! That page can’t be found.
+      +b.form.search-form.FORM(
+        action= "../pages/results.html"
+      )
+        +b.field.INPUT(
+          type= "search",
+          placeholder= "Search for",
+          novalidate
+        )
+        +b.btn.all-buttons.BUTTON(
+          type= "submit"
+        ) 
+          +b.text.P SEARCH

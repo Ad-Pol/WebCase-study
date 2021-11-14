@@ -1,0 +1,56 @@
+include ../../../mixins/index
+
+-
+  const filter = [
+    [{
+      class: "filter-btn--is-active",
+      filter: "*",
+      text: "ALLE" 
+    }],
+    [{
+      filter: ".reg1",
+      text: "NAME DER REGION 1" 
+    }],
+    [{
+      filter: ".reg2",
+      text: "NAME DER REGION 2" 
+    }],
+    [{
+      filter: ".reg3",
+      text: "NAME DER REGION 3" 
+    }],
+    [{
+      filter: ".reg4",
+      text: "NAME DER REGION 4" 
+    }],
+    [{
+      filter: ".reg5",
+      text: "NAME DER REGION 5" 
+    }],
+  ]
+
++b.section.--map-fach.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl
+    +b.filter-wrapper
+      each element in filter
+        +filter-bar(element)
+  +b.map.--fach#map2
+  +b.infowindow
+    +b.text.P Name der Region
+    +b.text.P LUXED Beleuchtungen GmbH Benzburweg 18A CH- 4410 Liestal
+    +b.link.A(
+      href= "#"
+    ) GET DIRECTION
+  +b.infowindow
+    +b.text.P Name der Region
+    +b.text.P LUXED Beleuchtungen GmbH Benzburweg 18A CH- 4410 Liestal
+    +b.link.A(
+      href= "#"
+    ) GET DIRECTION
+  +b.infowindow
+    +b.text.P Name der Region
+    +b.text.P LUXED Beleuchtungen GmbH Benzburweg 18A CH- 4410 Liestal
+    +b.link.A(
+      href= "#"
+    ) GET DIRECTION
+

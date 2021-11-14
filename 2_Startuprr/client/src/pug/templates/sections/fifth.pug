@@ -1,0 +1,39 @@
+include ../../mixins/index
+-
+  const works = [
+    [{
+      url: "#",
+      urlSecond: "#",
+      pic: "&#xe02b;",
+      picSecond: "&#x55;",
+      text: "Corporate Brochure",
+      about: "Illustration / Print",
+      heart: "&#xe089;",
+      number: "138",
+    }],
+  ]
+
++b.section.--fifth.SECTION
+  +b.g-container--fit_sm-sm.--fit_md-md.--fit_lg-lg.--fit_xl-xl.--fit_mac-mac.--fit_fhd-fhd
+    +sectionTitleWhite(
+      'sample',
+      'works',
+      'Let’s take a look at some of the best of our works here, we love them and hope you too'
+    )
+    +b.cards-wrapper.g-row.g-row--appearance_spaced
+      each element in works
+        +works(element)
+        +works(element)
+        +works(element)
+        +works(element)
+        +works(element)
+        +works(element)
+        +works(element)
+        +works(element)
+        +works(element)
+        +works(element)
+        +works(element)
+        +works(element)
+    +b.btn.A(
+      href="#"
+    ) view all works

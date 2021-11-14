@@ -1,0 +1,237 @@
+-
+  var ico_marker = ["&#xe06e;", "&#xe085;", "&#x42;"]
+
+mixin marker( text )
+  +b.marker.SPAN
+      +e.P.text!= ico_marker[text]
+
+mixin marker-dark
+  +b.marker.--dark.SPAN
+      +e.P.text &#x7b;
+
+
+-
+  var ico_flag = ["&#xe00e;", "&#xe0f9;", "&#xe033;", "&#xe056;", "&#xe07a;", "&#xe028;"]
+
+mixin flag( text )
+  +b.flag
+    +e.item.--top
+        +b.P.text!= ico_flag[text]
+    +e.item.--bottom
+
+-
+  var ico_social = ["&#xe093;", "&#xe094;", "&#xe095;", "&#xe09e;", "&#xe09c;", "&#xe0a3;", "&#xe09d;", "&#xe09b;", "&#xe09f;", "&#xe0a4;", "&#xe098;"]
+
+mixin social( text )
+  +b.social
+        +b.P.text!= ico_social[text]
+
+
+
+mixin card(cards = [])
+  each elements in cards
+    +b.card.g-cell.g-cols.g-cols--12-xs.g-cols--6-md.g-cols--4-xl
+      +b.flag
+        +e.item.--top
+          +b.P.text!= elements.ico
+        +e.item.--bottom
+      +e.item.--description
+        h3.caption= elements.title
+        P.text.text--info= elements.subtitle
+        P.text= elements.description
+
+mixin offer(offer = [])
+  each element in offer 
+    +b.card
+      +e.link.A(
+          href= element.url
+        ) #{element.text}
+      +e.pic.SPAN
+        +b.text(class=element.class).text--pic.P!= element.ico
+      +b.caption.H3= element.caption
+      +b.text.text--description.P= element.description
+
+mixin circle(circle = [])
+  each element in circle 
+    +b.circle.g-cell.g-cols.g-cols--12-xs.g-cols--6-sm.g-cols--4-md.g-cols--2-xl
+            +e.item
+              +b.circle-chart.SVG(
+                viewbox=('0 0 33.83098862 33.83098862')
+                width=('120')
+                height=('120')
+                xmlns=('http://www.w3.org/2000/svg')
+              )
+                +e.background.CIRCLE(
+                  stroke=('var(--theme-accent-white)')
+                  stroke-width=('1')
+                  fill=('none')
+                  cx=('16.91549431')
+                  cy=('16.91549431')
+                  r=('15.91549431')
+                )
+                +e.circle.CIRCLE(
+                  stroke=('var(--theme-accent-aqumarin)')
+                  stroke-width=('1')
+                  stroke-dasharray= element.dash
+                  stroke-linecap=('round')
+                  fill=('none')
+                  cx=('16.91549431')
+                  cy=('16.91549431')
+                  r=('15.91549431')
+                )
+              +b.text.text--procent.P= element.procent
+            +b.text.P= element.text
+
+
+mixin works(works = [])
+  each element in works
+      +b.card.g-cell.g-cols.g-cols--12.g-cols--6-md.g-cols--4-lg.g-cols--4-xl.g-cols--3-mac.g-cols--2-fhd
+        +e.item.--front
+        +e.item.--back
+          +b.info-wrapper 
+            +b.social-wrapper
+              +b.link.--first.A(
+                href= element.url
+              )
+                +b.text.--pic.P!= element.pic
+              
+              +b.link--second.A(
+                href= element.urlSecond
+              )
+                +b.text.--pic.P!= element.picSecond
+            +b.description-wrapper
+              +b.block.--first
+                +b.text.P= element.text
+                +b.text.--about.P= element.about
+              +b.block.--second
+                +b.text.--pic.P!= element.heart
+                +b.text.--number.P= element.number
+
+
+mixin sectionTitleWhite(text, decorate, description)
+  +b.section-title.--white
+    +b.title-wrapper
+      +b.lines.--left
+        +e.SPAN.item.--top
+        +e.SPAN.item.--bottom
+      +e.image.--left.IMG(
+        src=('../static/img/3rhombs.svg')
+        alt=('Rombs')
+      )
+      +b.text.P= text
+      +b.text.text--decorate.P= decorate
+      +e.image.--right.IMG(
+        src=('../static/img/3rhombs.svg')
+        alt=('Rombs')
+      )
+      +b.lines.--right
+        +e.SPAN.item.--top
+        +e.SPAN.item.--bottom
+    +b.text.text--caption.P= description
+
+mixin sectionTitleDark(text, decorate, description)
+  +b.section-title.--dark
+    +b.title-wrapper
+      +e.image.--left.IMG(
+        src=('../static/img/3rhombs.svg')
+        alt=('Rombs')
+      )
+      +b.text.P= text
+      +b.text.text--decorate.P= decorate
+      +e.image.--right.IMG(
+        src=('../static/img/3rhombs.svg')
+        alt=('Rombs')
+      )
+    
+    +b.text.text--caption.P= description
+
+mixin facts(number, pic, text)
+  +b.block.g-cols.g-cols--12-xs.g-cols--6-sm.g-cols--3-xl
+    +e.item.--first
+      +b.text.--pic.P &#x5e;
+      +b.text.P= number
+      +b.text.--pic.P &#x5e;
+    +e.item.--second
+      +b.line.SPAN
+      +b.text.--pic.P!= pic
+      +b.line.SPAN
+    +b.text.--what.P= text
+
+mixin team(team = [])
+  each element in team
+    +b.card
+      +b.card-block.--first
+        +e.item.--front 
+        +e.item.--back
+          +b.social-wrapper 
+            +b.btn.A(
+              href= element.url1
+            ) 
+              +b.text.P &#xe093;
+            +b.btn.A(
+              href= element.url2
+            )
+              +b.text.P &#xe094;
+            +b.btn.A(
+              href= element.url3
+            )
+              +b.text.P &#xe096;
+            +b.btn.A(
+              href= element.url4
+            )
+              +b.text.P &#xe09c;
+            +b.btn.A(
+              href= element.url5
+            )
+              +b.text.P &#xe09b;
+      +b.card-block.--second
+        +b.btn.A(
+          href= element.url6
+        ) #{element.name}
+        +b.text.--position.P= element.position
+        +b.line.SPAN 
+        +e.item.--mail
+          +b.text.--pic.P &#xe076;
+          +b.link.A(
+            href= element.url7
+          ) #{element.text1}
+        +e.item.--telephone
+          +b.text.--pic.P &#xe090;
+          +b.link.A(
+            href= element.url8
+          ) #{element.text2}
+
+mixin quote(name, position, quotes)
+  +b.card 
+          +e.item.--first
+            +b.text.--name.P= name
+            +b.text.--position.P= position
+          +b.text.--quotes.P  <span class="text text--pic">&#x7b;</span> #{quotes} <span class="text text--pic">&#x7b;</span> 
+
+
+mixin price(price = [])
+  each element in price
+    +b.card 
+      +e.link.A(
+        href="#"
+      ) read more
+      +e.item(class=element.class).--title
+        +b.text.--pic.P &#xe033;
+        +b.text.--title.P= element.plan
+        +b.text.--pic.P &#xe033;
+      +b.block
+        +e.item.--value
+          +b.text.P $
+        +e.item.--price
+          +b.text.--dollars.P= element.dollars
+          +b.text.--cents.P= element.cents
+          +b.text.--dot.P &#x5e;
+        +b.text.--mounts Monthly
+      +e.line.SPAN 
+      +e.item.--offer 
+        +b.text.P= element.offer1
+        +b.text.P= element.offer2
+        +b.text.P= element.offer3
+        +b.text.P= element.offer4
+        +b.text.--last.P= element.offer5
+      +e.line.SPAN 

@@ -1,0 +1,30 @@
+.news-wrapper
+  mt: 50px
+  mb: 65px
+
+.new
+  d: flex
+  f-dir: column
+  ai: center
+
+.pagination-wrapper
+  d: flex
+  mb: 30px
+  .number
+    d: flex
+    jc: center
+    ai: center
+    w: 42px
+    h: 42px
+    mr: 20px
+    .text
+      color: var(--theme-accent-black)
+      fs: $type-font-size-sm
+      @extend .ds-caption--bold
+      cursor: pointer
+    &--
+      &is
+        &-active
+          bg: var(--theme-accent-black)
+          .text
+            color: var(--theme-accent-white)

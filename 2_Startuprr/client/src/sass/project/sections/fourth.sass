@@ -1,0 +1,114 @@
+.section
+  &--
+    &fourth
+      background: var(--theme-accent-dark)
+      padding-top: 77px
+      position: relative
+      padding-bottom: 70px
+
+      .about
+        w: 100%
+        d: flex
+        flex-direction: column
+        justify-content: center
+
+        .about-wrapper
+          d: flex
+          align-items: center
+          justify-content: space-between
+
+          &__
+            &image
+              &--
+                &right
+                  transform: rotate(180deg)
+          
+          .lines
+            position: relative
+            h: 6px
+            w: 30px
+            
+            &__
+              &item
+                position: absolute
+                w: 100%
+                h: 1px
+                background-image: linear-gradient(to left, var(--theme-accent-grey-s) 0%, var(--theme-accent-white_fo) 100%)
+
+                &--
+                  &top
+                    top: 0
+                
+                &--
+                  &bottom
+                    bottom: 0
+          
+          .lines   
+            &--
+              &right
+                transform: rotate(180deg)
+          
+          .text
+            margin-top: 0
+            margin-bottom: 0
+            color: var(--theme-accent-white_f)
+            font-size: $type-font-size-2sm
+            font-weight: 800
+            text-transform: uppercase    
+            &--
+              &decorate
+                color: var(--theme-accent-aqumarin)
+
+        .text
+          text-align: center
+          margin-top: 20px
+          color: var(--theme-accent-light_gray)
+          font-size: $type-font-size-sm
+          font-weight: 500
+          line-height: 16px
+          margin-bottom: 50px
+    
+.circles-wrapper
+  // d: flex
+  // flex-direction: column
+  // width: 100%
+  // align-items: center
+  w: 100%
+
+  .circle
+    d: flex
+    align-items: center
+    flex-direction: column
+    
+    // d: block
+    // w: max-content
+    &__
+      &item
+        w: 120px
+        h: 120px
+        position: relative
+        transform: rotate(180deg)
+        margin: 0 auto
+    .text
+      color: var(--theme-accent-light_gray)
+      font-size: $type-font-size-xs
+      font-weight: 800
+      text-align: center
+      text-transform: uppercase
+      margin-top: 20px
+      &--
+        &procent
+          color: var(--theme-accent-white_f)
+          font-size: $type-font-size-3xl
+          font-weight: 800
+          text-align: center
+          text-transform: uppercase
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%) rotate(180deg)
+          margin: 0
+.circle-chart
+  &__
+    &circle
+      animation: circle-chart-fill 2s reverse

@@ -1,0 +1,107 @@
+.section
+  &--
+    &coubes
+      bg: var(--theme-accent-whiteFirst)
+      pos: relative
+      .g-
+        &container
+          h: 1300px
+          +mq-md
+            h: 700px
+          +mq-xl
+            h: 300px
+
+.coubes
+  max-w: 1200px
+  d: flex
+  jc: space-between
+  w: 100%
+  ma: 0 auto
+  h: 0px
+  pos: absolute
+  t: 0%
+  l: 50%
+  trans: translate(-50%, 0)
+  z-index: 3
+  +mq-xl
+    t: -50%
+    
+.coube-wrapper 
+  d: flex
+  jc: center
+  ai: center
+  perspective: 1000px
+  perspective-origin: center -100px
+
+.coube
+  w: 250px
+  h: 250px
+  transform-style: preserve-3d
+  trans: rotateY(15deg) translateY(200px)
+  tr: all 1s ease 0s
+  mb: 20px
+  &:hover
+    tr: all 1s ease 0s
+    trans: translateX(-20px) rotateY(-180deg) translateY(200px)
+
+.side
+  w: 200px
+  h: 200px
+  pos: absolute
+  br: 1px solid var(--theme-accent-white)
+  d: flex
+  jc: center
+  ai: center
+  &--
+    &back
+      bg: url('../../static/img/coubeBack.png')
+      trans: translateZ(-100px) translateY(-50%) rotateY(180deg)
+  &--
+    &front
+      trans: translateZ(100px) translateX(0) translateY(-50%)
+      bg: url('../../static/img/coubeFront.png')
+  &--
+    &left
+      trans: translateX(100px) translateZ(0) translateY(-50%) rotateY(90deg)
+      bg: url('../../static/img/coubeBack.png')
+  &--
+    &right
+      trans: translateX(-100px) translateZ(0) translateY(-50%) rotateY(90deg)
+      bg: url('../../static/img/coubeBack.png')
+  &--
+    &top
+      trans: translateY(-200px) rotateX(90deg)
+      bg: url('../../static/img/coubeFront.png')
+  &--
+    &bottom
+      trans: translateY(0px) rotateX(90deg)
+      bg: url('../../static/img/coubeFront.png')
+
+.coube-link,
+.coube-text
+  color: var(--theme-accent-white)
+  fs: $type-font-size-2lg
+  @extend .ds-caption--regular
+  ft: uppercase
+  ta: center
+  
+.bg-
+  &text
+    fs: $type-font-size-xl
+    @extend .ds-caption--extrabold
+    ta: center
+    ft: uppercase
+    color: var(--theme-accent-greyFriday)
+    pos: absolute
+    top: 0
+    left: 50%
+    trans: translate(-50%, 0)
+    +mq-md
+      fs: $type-font-size-2xl
+    +mq-lg
+      fs: $type-font-size-4xl
+    +mq-fhd
+      fs: $type-font-size-5xl
+      w: 100%
+      top: 100%
+      trans: translate(-50%, -100%)

@@ -1,0 +1,6 @@
+.#{$DERMIS_PREFIX}caption
+  &--
+    @each $key, $value  in $font-weight-group
+      &#{$key}
+        +mq-adaptive
+          font-weight: #{$value}
